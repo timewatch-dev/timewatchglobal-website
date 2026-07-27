@@ -728,7 +728,7 @@ export default function BiometricAttendanceAhmedabad() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>sales@timewatchindia.com</span>
+                  Email: <span>mohsin@timewatchglobal.com.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">

@@ -163,7 +163,7 @@ const FAQPage = () => {
         },
         {
           q: "How can I get TimeWatch devices or request a demo?",
-          a: "You can contact TimeWatch through our official websites www.timewatchindia.com or www.timewatchuae.com to request a demo, product quotation, or consultation for your organization's security, attendance, or access control requirements. You can also reach us at +91 95999 53923 or email sales@timewatchindia.com."
+          a: "You can contact TimeWatch through our official websites www.timewatchindia.com or www.timewatchuae.com to request a demo, product quotation, or consultation for your organization's security, attendance, or access control requirements. You can also reach us at +91 95999 53923 or email mohsin@timewatchglobal.com.com."
         }
       ]
     }
@@ -287,13 +287,13 @@ const FAQPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+971547770685"
+              href="tel:+971 5237 44121"
               className="px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-[#b82c30] transition-colors shadow-lg"
             >
-              Call +971-54-777-0685
+              Call +971 5237 44121
             </a>
             <a
-              href="mailto:nitin@timewatchuae.com"
+              href="mailto:sales@timewatchglobal.com"
               className="px-8 py-4 bg-[#6d6f72] text-white font-semibold rounded-lg hover:bg-[#5a5c5f] transition-colors shadow-lg"
             >
               Email Us

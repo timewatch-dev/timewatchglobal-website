@@ -1,0 +1,88 @@
+// Static data for the homepage premium product showcase slider.
+// slug holds the full route so ProductCard can link directly.
+export const productShowcase = [
+  {
+    id: 1,
+    title: "Cloud Attendance & Payroll Software",
+    category: "Workforce & HR",
+    image: "/images/solutions/sub/update-software.jpg",
+    slug: "/solutions/workforce-hr-solutions/cloud-attendance-payroll-software",
+  },
+  {
+    id: 2,
+    title: "Geo-Fencing Mobile Punch",
+    category: "Workforce & HR",
+    image: "/images/solutions/sub/for-geo-fencing.jpg",
+    slug: "/solutions/workforce-hr-solutions/geo-fencing-mobile-punch",
+  },
+  {
+    id: 3,
+    title: "Field Staff Tracking Solution",
+    category: "Workforce & HR",
+    image: "/images/solutions/sub/live-tracking.jpg",
+    slug: "/solutions/workforce-hr-solutions/field-staff-tracking-solution",
+  },
+  {
+    id: 4,
+    title: "Access Control System Terminals",
+    category: "Security Screening",
+    image: "/images/solutions/access-control.png",
+    slug: "/solutions/security-screening-solutions/access-control-system-terminals",
+  },
+  {
+    id: 5,
+    title: "Canteen Management System",
+    category: "Facility Management",
+    image: "/images/solutions/sub/canteen-management.jpg",
+    slug: "/solutions/facility-membership-management/canteen-management-system",
+  },
+  {
+    id: 6,
+    title: "Gym Management Solution",
+    category: "Facility Management",
+    image: "/images/solutions/Gym-Management-Solution.png",
+    slug: "/solutions/facility-membership-management/gym-management-solution",
+  },
+  {
+    id: 7,
+    title: "Crowd Management – Turnstile Gates & Flap Barriers",
+    category: "Visitor & Access",
+    image: "/images/solutions/crowd.png",
+    slug: "/solutions/visitor-access-management/crowd-management-solutions-turnstile-gates-flap-barriers",
+  },
+  {
+    id: 8,
+    title: "Visitor Management System",
+    category: "Visitor & Access",
+    image: "/images/solutions/visitor-management-system.png",
+    slug: "/solutions/visitor-access-management/what-is-a-visitor-management-system",
+  },
+  {
+    id: 9,
+    title: "Walk Through Metal Detector",
+    category: "Inspection & Detection",
+    image: "/images/solutions/Walk-Through-Metal-Detector.png",
+    slug: "/solutions/inspection-detection-solutions/walk-through-metal-detector",
+  },
+  {
+    id: 10,
+    title: "Advanced X-Ray Baggage Screening",
+    category: "Inspection & Detection",
+    image: "/images/solutions/baggage-scanner2.png",
+    slug: "/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
+  },
+  {
+    id: 11,
+    title: "Under Vehicle Surveillance System (UVSS)",
+    category: "Inspection & Detection",
+    image: "/images/solutions/sub/uvss.jpg",
+    slug: "/solutions/inspection-detection-solutions/under-vehicle-surveillance-system-uvss-tw3300",
+  },
+  {
+    id: 12,
+    title: "Hand Held Metal Detector",
+    category: "Inspection & Detection",
+    image: "/images/solutions/Hand-Held-Metal-Detector.png",
+    slug: "/solutions/inspection-detection-solutions/hand-held-metal-detector-tw-hh100",
+  },
+];

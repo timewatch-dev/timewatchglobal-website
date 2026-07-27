@@ -263,14 +263,14 @@ const CEODesk = () => {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+971547770685"
+              href="tel:+971 5237 44121"
               className="flex items-center space-x-2 bg-gradient-to-r from-primary to-[#b82c30] text-white px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all"
             >
               <Phone className="w-5 h-5" />
-              <span>+971-54-777-0685</span>
+              <span>+971 5237 44121</span>
             </a>
             <a
-              href="mailto:nitin@timewatchuae.com"
+              href="mailto:sales@timewatchglobal.com"
               className="flex items-center space-x-2 bg-gradient-to-r from-[#6d6f72] to-[#5a5c5f] text-white px-6 py-3 rounded-lg font-semibold hover:shadow-xl transition-all"
             >
               <Mail className="w-5 h-5" />

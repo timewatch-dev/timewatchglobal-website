@@ -36,11 +36,11 @@ const disclaimerPage = () => {
                     </p> */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <a
-                        href="mailto:nitin@timewatchuae.com"
+                        href="mailto:sales@timewatchglobal.com"
                         className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                       >
                         <Mail className="w-4 h-4 mr-2" />
-                        nitin@timewatchuae.com
+                        sales@timewatchglobal.com
                       </a>
                       <a
                         href="https://www.timewatchuae.com"

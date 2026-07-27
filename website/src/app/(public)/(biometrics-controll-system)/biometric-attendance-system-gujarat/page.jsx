@@ -379,17 +379,17 @@ export default function BiometricAttendanceGujarat() {
             </p>
             <p>
               <span className="font-semibold">Phone:</span>{" "}
-              <a href="tel:+919597753923" className="text-secondary">
-                +91 95999 53923
+              <a href="tel:+971 5237 44121" className="text-secondary">
+               +971 5237 44121
               </a>
             </p>
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <a
-                href="mailto:sales@timewatchindia.com"
+                href="mailto:mohsin@timewatchglobal.com.com"
                 className="text-secondary"
               >
-                sales@timewatchindia.com
+                mohsin@timewatchglobal.com.com
               </a>
             </p>
           </div>
@@ -714,7 +714,7 @@ export default function BiometricAttendanceGujarat() {
                 Call: <span>+91 95999 53923</span>
               </p>
               <p className="md:text-xl font-semibold">
-                Email: <span>sales@timewatchindia.com</span>
+                Email: <span>mohsin@timewatchglobal.com.com</span>
               </p>
             </div>
             <p className="text-sm text-white/90 max-w-xs">

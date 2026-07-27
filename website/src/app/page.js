@@ -31,10 +31,12 @@ import HeroSection from "@/components/HeroSection";
 import HomePageForm from "@/components/HomePageForm";
 import FeaturedProducts from "@/components/products/FeaturedProducts";
 import FeaturesProduct from "@/components/home/FeaturesProduct";
+import ProductSlider from "@/components/home/ProductSlider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { solutions } from "@/data/menuItems";
+import { productShowcase } from "@/data/productShowcase";
 import axiosInstance from "@/lib/axiosInstance";
 
 export const dynamic = "auto"; // optional; ISR will still work
@@ -116,6 +118,15 @@ export default async function HomePage() {
         <div className="relative overflow-hidden hidden">
           <HeroSection />
         </div>
+
+        {/* Product Showcase Slider */}
+        <ProductSlider
+          products={productShowcase}
+          eyebrow="Product Showcase"
+          title="Explore Our Product Range"
+          subtitle="Enterprise-grade security, screening & workforce technology built for performance."
+        />
+
         {/* <FeaturedProducts/> */}
         {/* features products */}
         <FeaturesProduct publishedProducts={publishedProducts} />
@@ -752,8 +763,8 @@ export default async function HomePage() {
                     <h3 className="text-lg font-semibold text-[#6d6f72] mb-2">
                       Phone
                     </h3>
-                    <a href="tel:+971547770637" className="text-gray-600">
-                      +971-54-777-0637
+                    <a href="tel:+971523744121" className="text-gray-600">
+                      +971 5237 44121
                     </a>
                     {/* <p className="text-sm text-gray-500">Available 24/7 for support</p> */}
                   </div>
@@ -766,8 +777,8 @@ export default async function HomePage() {
                     <h3 className="text-lg font-semibold text-[#6d6f72] mb-2">
                       Sales & Technical
                     </h3>
-                    <a href="tel:+971547770637" className="text-gray-600">
-                      +971-54-777-0637
+                    <a href="tel:+971 5477 70685" className="text-gray-600">
+                     +971 5477 70685
                     </a>
                     {/* <p className="text-sm text-gray-500">Available 24/7 for support</p> */}
                   </div>
@@ -782,10 +793,10 @@ export default async function HomePage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:sales@timewatchindia.com"
+                      href="mailto:mohsin@timewatchglobal.com.com"
                       className="text-gray-600"
                     >
-                      sales@timewatchindia.com
+                      mohsin@timewatchglobal.com.com
                     </a>
                     
                   </div>

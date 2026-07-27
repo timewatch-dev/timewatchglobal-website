@@ -59,7 +59,7 @@ const faqs = [
   {
     question: "Where can I get a demo or buy BIO-1SE?",
     answer:
-      "You can request a free demo or place an order by calling us at +91 95999 53923 or emailing sales@timewatchindia.com. We provide support and installations across India and Gulf countries such as Dubai, Abu Dhabi, and Qatar.",
+      "You can request a free demo or place an order by calling us at +91 95999 53923 or emailing mohsin@timewatchglobal.com.com. We provide support and installations across India and Gulf countries such as Dubai, Abu Dhabi, and Qatar.",
   },
 ];
 
@@ -104,7 +104,7 @@ const faqJsonLd = {
       name: "Where can I get a demo or buy BIO-1SE?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can request a free demo by calling +91 95999 53923 or emailing sales@timewatchindia.com. TimeWatch serves across India and Gulf countries including Dubai, Doha, and Abu Dhabi.",
+        text: "You can request a free demo by calling +91 95999 53923 or emailing mohsin@timewatchglobal.com.com. TimeWatch serves across India and Gulf countries including Dubai, Doha, and Abu Dhabi.",
       },
     },
   ],
@@ -500,7 +500,7 @@ const BIO1SEPage = () => {
                 </p>
                 <p className="md:text-xl font-semibold">
                   Email:&nbsp;
-                  <span> sales@timewatchindia.com</span>
+                  <span> mohsin@timewatchglobal.com.com</span>
                 </p>
               </div>
             </div>

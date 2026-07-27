@@ -132,19 +132,49 @@ const Footer = () => {
               <li className="flex flex-col leading-[20px]">
                 <span className="text-white pr-2 font-semibold">Email:</span>
                 <a
-                  href="mailto:nitin@timewatchuae.com"
+                  href="mailto:sales@timewatchglobal.com"
                   className="hover:text-white transition-colors"
                 >
-                  nitin@timewatchuae.com
+                  sales@timewatchglobal.com
+                </a>
+                <a
+                  href="mailto:mohsin@timewatchglobal.com"
+                  className="hover:text-white transition-colors"
+                >
+                  mohsin@timewatchglobal.com
                 </a>
               </li>
               <li className="flex flex-col leading-[20px]">
                 <span className="text-white pr-2 font-semibold">Phone:</span>
-                <a
+                {/* <a
                   href="tel:+971547770685"
                   className="hover:text-white transition-colors"
                 >
                   +971-54-777-0685
+                </a> */}
+                {/* <a
+                  href="tel:+971523744121"
+                  className="hover:text-white transition-colors"
+                >
+                 +971 5237 44121
+                </a> */}
+                {/* <a
+                  href="tel:+971568355615"
+                  className="hover:text-white transition-colors"
+                >
+                  +971 5683 55615
+                </a> */}
+                <a
+                  href="tel:+971523744121"
+                  className="hover:text-white transition-colors"
+                >
+                 +971 5237 44121
+                </a>
+                <a
+                  href="tel:+971547770685"
+                  className="hover:text-white transition-colors"
+                >
+                  +971 5477 70685
                 </a>
               </li>
               <li className="flex flex-col leading-[20px]">
@@ -155,7 +185,7 @@ const Footer = () => {
                   href="tel:+971547770685"
                   className="hover:text-white transition-colors"
                 >
-                  +971-54-777-0685
+                  +971 5477 70685
                 </a>
               </li>
               <li className="flex flex-col leading-[20px]">

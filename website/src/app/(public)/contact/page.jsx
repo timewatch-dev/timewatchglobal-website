@@ -63,7 +63,7 @@ const Globaladdresses = [
    {
     id: 12,
     title: "India (Head Office)",
-    name:"Ms. Priyanka",
+    // name:"Ms. Priyanka",
     email:"sales@timewatcharabia.com",
     contact:"+91-95999 53923",
     
@@ -89,13 +89,13 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+971-54-777-0685"],
+      details: ["+971 5237 44121","+971 5477 70685"],
       subtitle: "Support - 24/7",
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["nitin@timewatchuae.com"],
+      details: ["sales@timewatchglobal.com"],
       subtitle: "We'll respond within 24 hours",
     },
     {
@@ -166,7 +166,7 @@ const ContactPage = () => {
               <h3 className="text-lg font-semibold text-[#6d6f72] mb-2">
                 Email Us
               </h3>
-              <p className="text-gray-600">nitin@timewatchuae.com</p>
+              <p className="text-gray-600">sales@timewatchglobal.com</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <MapPin className="w-12 h-12 text-[#d63438] mx-auto mb-4" />
@@ -409,7 +409,7 @@ const ContactPage = () => {
             <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#d63438] transition-colors flex items-center justify-center">
               <Mail className="w-5 h-5 mr-2" />
               <span className="hidden md:inline">Email: </span>{" "}
-              nitin@timewatchuae.com
+              sales@timewatchglobal.com
             </button>
           </div>
         </div>

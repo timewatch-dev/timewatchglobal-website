@@ -543,7 +543,7 @@ const AIFaceT7HDPage = () => {
                 </p>
                 <p className="md:text-xl font-semibold">
                   Email:&nbsp;
-                  <span> sales@timewatchindia.com</span>
+                  <span> mohsin@timewatchglobal.com.com</span>
                 </p>
               </div>
             </div>

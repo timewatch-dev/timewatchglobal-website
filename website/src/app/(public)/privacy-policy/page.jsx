@@ -36,11 +36,11 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <a
-                        href="mailto:sales@timewatchindia.com"
+                        href="mailto:mohsin@timewatchglobal.com.com"
                         className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                       >
                         <Mail className="w-4 h-4 mr-2" />
-                        sales@timewatchindia.com
+                        mohsin@timewatchglobal.com.com
                       </a>
                       <a
                         href="https://www.timewatchindia.com"
@@ -730,7 +730,7 @@ const PrivacyPolicy = () => {
                     If you have any questions about this Privacy Policy, You can
                     contact us:
                     <ul className="">
-                      <li>By email: sales@timewatchindia.com</li>
+                      <li>By email: mohsin@timewatchglobal.com.com</li>
                       <li>
                         By visiting this page on our website:
                         www.timewatchindia.com
