@@ -120,12 +120,12 @@ export default async function HomePage() {
         </div>
 
         {/* Product Showcase Slider */}
-        <ProductSlider
+        {/* <ProductSlider
           products={productShowcase}
           eyebrow="Product Showcase"
           title="Explore Our Product Range"
           subtitle="Enterprise-grade security, screening & workforce technology built for performance."
-        />
+        /> */}
 
         {/* <FeaturedProducts/> */}
         {/* features products */}

@@ -26,7 +26,7 @@ export const metadata = {
 
 
 const downloadPage = () => {
-  const downloadData = [
+ const downloadData = [
     {
       title: "iDMS",
       icon: "/images/google-drive.png",
@@ -35,18 +35,18 @@ const downloadPage = () => {
     {
       title: "iAS",
       icon: "/images/google-drive.png",
-      url: "https://drive.google.com/file/d/1OCLCQtvVzGjX52hVaXsTsh6CnSyFmCTa/view",
+      url: "https://drive.google.com/file/d/1IAx3Jq48ocuIC4Hx39-CvxvxQTKOd2wu/view?pli=1",
     },
     {
       title: "TimeWatch Access Control",
       icon: "/images/google-drive.png",
       url: "https://drive.google.com/file/d/12d-6KEwjnd-_vQJu-kgnXJ0iujodZA1j/view",
     },
-    {
-      title: "TimeWatch Access Contol SDK",
-      icon: "/images/google-drive.png",
-      url: "https://drive.google.com/file/d/1sjntsUBbB2mVTcRZWDkpY6Ziw_niCbaa/view",
-    },
+    // {
+    //   title: "TimeWatch Access Contol SDK",
+    //   icon: "/images/google-drive.png",
+    //   url: "https://drive.google.com/file/d/1sjntsUBbB2mVTcRZWDkpY6Ziw_niCbaa/view",
+    // },
     {
       title: "TrueFace SDK",
       icon: "/images/google-drive.png",
@@ -60,7 +60,13 @@ const downloadPage = () => {
     {
       title: "TimeWatch Catalogue",
       icon: "/images/google-drive.png",
-      url: "https://timewatch.co.in/docs/TimeWatchCatalogue.pdf",
+      url: "/images/product-catalogue.pdf",
+    },
+    {
+      title: "Bio Series SDK",
+      icon: "/images/google-drive.png",
+      url: "https://drive.google.com/open?id=1vAyPR66bQEKpV2siAhgXM1xWwpOd8Fyj&usp=drive_fs",
+      
     },
   ];
 

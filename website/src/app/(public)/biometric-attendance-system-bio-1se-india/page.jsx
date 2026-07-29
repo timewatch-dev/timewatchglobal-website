@@ -279,7 +279,7 @@ const BIO1SEPage = () => {
                 </Link>
 
                 <Link
-                  href="https://wa.link/cex09u"
+                  href=""
                   target="_blank"
                   className="border-2 border-sectext-secondary text-secondary px-8 py-4 rounded-xl font-semibold hover:bg-sectext-secondary hover:text-primary transition-all flex items-center justify-center space-x-2"
                 >
@@ -444,7 +444,7 @@ const BIO1SEPage = () => {
             </div>
           </div>
            <Button asChild className={'mx-auto mt-10 flex justify-center w-fit'}>
-              <Link href={"https://wa.link/cex09u"} target="_blank">Instant WhatsApp Enquiry</Link>
+              <Link href={"https://wa.me/+971524744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"} target="_blank">Instant WhatsApp Enquiry</Link>
             </Button>
         </section>
 

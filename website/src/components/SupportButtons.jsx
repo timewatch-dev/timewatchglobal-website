@@ -75,7 +75,7 @@ const scrollToTop = () => {
         >
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/+971547770685?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"
+            href="https://wa.me/+971524744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center bg-transparent hover:bg-[#25D366] text-white rounded-full shadow-lg w-[45px] h-[45px] lg:w-[55px] lg:h-[55px] hover:w-36 transition-all duration-300 overflow-hidden"
