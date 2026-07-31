@@ -148,8 +148,7 @@ const ProductDetails = ({ product }) => {
 
             <Button asChild variant="secondary" className="hidden md:flex">
               <Link
-                href="https://wa.me/+971547770685
-?text=Hello%F0%9F%91%8B%F0%9F%8F%BB%20TimeWatch%2C%0AI%27m%20Interested%20in%20your%20product%20or%20services%0APlease%20Assist%20me%21%20%20"
+                href="https://wa.me/+971523744121?text=Hello%F0%9F%91%8B%F0%9F%8F%BB%20TimeWatch%2C%0AI%27m%20Interested%20in%20your%20product%20or%20services%0APlease%20Assist%20me%21%20%20"
                 target="_blank"
                 rel="noopener noreferrer"
               >

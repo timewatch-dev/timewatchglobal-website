@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* right side */}
         <div className="flex items-center">
-          <Link href="tel:+919599953921" className="block lg:hidden">
+          <Link href="tel:+971523744121" className="block lg:hidden">
             <Phone className="text-primary"/>
           </Link>
           <SearchBar />

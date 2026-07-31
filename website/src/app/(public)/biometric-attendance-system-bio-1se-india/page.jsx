@@ -444,7 +444,7 @@ const BIO1SEPage = () => {
             </div>
           </div>
            <Button asChild className={'mx-auto mt-10 flex justify-center w-fit'}>
-              <Link href={"https://wa.me/+971524744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"} target="_blank">Instant WhatsApp Enquiry</Link>
+              <Link href={"https://wa.me/+971523744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"} target="_blank">Instant WhatsApp Enquiry</Link>
             </Button>
         </section>
 

@@ -82,7 +82,7 @@ const Footer = () => {
               Empowering businesses with smart security and biometric solutions
               for a safer world.
             </p>
-            <Link href={"/product-catalouge"}>
+            {/* <Link href={"/product-catalouge"}>
               <Image
                 src={"/images/catalogue-qr.png"}
                 width={100}
@@ -92,7 +92,7 @@ const Footer = () => {
               />
             </Link>
 
-            <small className="mt-0">Get Catalogue</small>
+            <small className="mt-0">Get Catalogue</small> */}
           </div>
 
           <div>
@@ -146,35 +146,11 @@ const Footer = () => {
               </li>
               <li className="flex flex-col leading-[20px]">
                 <span className="text-white pr-2 font-semibold">Phone:</span>
-                {/* <a
-                  href="tel:+971547770685"
-                  className="hover:text-white transition-colors"
-                >
-                  +971-54-777-0685
-                </a> */}
-                {/* <a
-                  href="tel:+971523744121"
-                  className="hover:text-white transition-colors"
-                >
-                 +971 5237 44121
-                </a> */}
-                {/* <a
-                  href="tel:+971568355615"
-                  className="hover:text-white transition-colors"
-                >
-                  +971 5683 55615
-                </a> */}
                 <a
                   href="tel:+971523744121"
                   className="hover:text-white transition-colors"
                 >
-                 +971 5237 44121
-                </a>
-                <a
-                  href="tel:+971547770685"
-                  className="hover:text-white transition-colors"
-                >
-                  +971 5477 70685
+                  +971 5237 44121
                 </a>
               </li>
               <li className="flex flex-col leading-[20px]">
@@ -182,10 +158,10 @@ const Footer = () => {
                   Sales & Technical:
                 </span>
                 <a
-                  href="tel:+971547770685"
+                  href="tel:+971568355615"
                   className="hover:text-white transition-colors"
                 >
-                  +971 5477 70685
+                   +971 5683 55615
                 </a>
               </li>
               <li className="flex flex-col leading-[20px]">

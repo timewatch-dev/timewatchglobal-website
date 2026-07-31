@@ -75,7 +75,7 @@ const scrollToTop = () => {
         >
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/+971524744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"
+            href="https://wa.me/+971523744121?text=Hello%20TimeWatch%2C%20I'm%20interested%20in%20your%20product%20or%20services.%20Please%20assist%20me!"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center bg-transparent hover:bg-[#25D366] text-white rounded-full shadow-lg w-[45px] h-[45px] lg:w-[55px] lg:h-[55px] hover:w-36 transition-all duration-300 overflow-hidden"
@@ -96,19 +96,6 @@ const scrollToTop = () => {
               WhatsApp
             </span>
           </a>
-          {/* Call Button (visible only on mobile) */}
-          {/* <a
-            href="tel:+919599953921"
-            className="group flex items-center bg-primary text-white rounded-full shadow-lg w-[45px] h-[45px] lg:w-[55px] lg:h-[55px] lg:w-[55px] lg:h-[55px] hover:w-36 transition-all duration-300 overflow-hidden md:hidden"
-            title="Call Us"
-          >
-            <div className="flex items-center justify-center w-[45px] h-[45px] shrink-0">
-              <Phone className="w-[24px] h-[24px]" />
-            </div>
-            <span className="ml-2 text-sm font-medium opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap">
-              Call Us
-            </span>
-          </a> */}
         </div>
 
         {/* Scroll to Top Button (Left Bottom) */}

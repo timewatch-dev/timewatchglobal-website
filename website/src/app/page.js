@@ -777,8 +777,8 @@ export default async function HomePage() {
                     <h3 className="text-lg font-semibold text-[#6d6f72] mb-2">
                       Sales & Technical
                     </h3>
-                    <a href="tel:+971 5477 70685" className="text-gray-600">
-                     +971 5477 70685
+                    <a href="tel:+971568355615" className="text-gray-600">
+                      +971568355615
                     </a>
                     {/* <p className="text-sm text-gray-500">Available 24/7 for support</p> */}
                   </div>

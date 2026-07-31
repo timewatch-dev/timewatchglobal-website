@@ -18,47 +18,6 @@ export const metadata = {
     "Get in touch with TimeWatch Infocom for product inquiries, support, or partnership opportunities. We're here to help with secure and smart tech solutions.",
 };
 
-// Address data array (you can move this to props or external JSON later)
-const addresses = [
-  {
-    id: 1,
-    title: "Bangalore Office",
-    name: "Mr. Lalith",
-    email: "lalith@timewatchindia.com",
-    contact: "+91 95999 74776",
-
-    lines: [
-      "No.28, 5thAcross, Marenhalli JP Nagar, 2nd Phase, Bangalore-560078",
-    ],
-  },
-  {
-    id: 2,
-    title: "Ahmedabad Office",
-    contact: "+91 96676 49888",
-    name: "Anshika Jain",
-    email: " Anshika@timewatchindia.com",
-    lines: [
-      "Office No. 102, Platinum Plaza, Nr Judges Bungalow Road, Bodakdev, Ahmedabad – 380054",
-    ],
-  },
-  {
-    id: 3,
-    title: "Mumbai Residence",
-    name: "Amit Patel",
-    contact: "+91 84484 85472",
-    email: "Amit1@timewatchindia.com",
-    lines: ["Suburban State: Maharashtra PIN Code: 400069"],
-  },
-  {
-    id: 4,
-    title: "Kolkata (Godrej Waterside)",
-    name: "Smriti Tiwari",
-    contact: "+91 8448485473",
-    lines: ["North Twenty Four Parganas, State: West Bengal PIN Code: 700091"],
-  },
-];
-
-
 const Globaladdresses = [
    {
     id: 12,
@@ -89,8 +48,8 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+971 5237 44121","+971 5477 70685"],
-      subtitle: "Support - 24/7",
+      details: ["+97156 835 5615"],
+      subtitle: "Sales & Support - 24/7",
     },
     {
       icon: Mail,
@@ -157,9 +116,9 @@ const ContactPage = () => {
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <Phone className="w-12 h-12 text-[#d63438] mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-[#6d6f72] mb-2">
-                Call Us
+               Call Us
               </h3>
-              <p className="text-gray-600">+971-54-777-0685</p>
+              <p className="text-gray-600">+971 5237 44121</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg">
               <Mail className="w-12 h-12 text-[#d63438] mx-auto mb-4" />
@@ -174,7 +133,7 @@ const ContactPage = () => {
                 Head Office / Visit Us
               </h3>
               <p className="text-gray-600">
-                D-162, Okhla Industrial Area Phase I, New Delhi, 110020
+                Building no. 08R-SH Saih Shuaib2, Plot no.176-0 Dubai
               </p>
             </div>
           </div>
@@ -403,7 +362,7 @@ const ContactPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-[#d63438] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
               <Phone className="w-5 h-5 mr-2" />
-              Call Now: +971-54-777-0685
+              Call Now: +971568355615
 
             </button>
             <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#d63438] transition-colors flex items-center justify-center">
