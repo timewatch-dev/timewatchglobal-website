@@ -42,14 +42,15 @@ import axiosInstance from "@/lib/axiosInstance";
 export const dynamic = "auto"; // optional; ISR will still work
 
 export const metadata = {
+  metadataBase: new URL("https://www.timewatchglobal.com"),
   title:
-    "Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions | TimeWatch Infocom",
+    "Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions | TimeWatch",
   description:
-    "TimeWatch offers advanced biometric attendance systems, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management solutions. Your trusted partner for smart access control and security automation across India and the UAE.",
+    "TimeWatch offers advanced biometric attendance systems, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management solutions. Your trusted partner for smart access control and security automation across India, the UAE, Saudi Arabia and international markets.",
   keywords:
-    "biometric attendance system, access control system, baggage scanner, DFMD, boom barrier, parking management system, turnstile gate, full height turnstile, flap barrier, swing gate, visitor management system, UHF reader, UVSS, ANPR camera, automatic bollard, spike barrier, tyre killer, road blocker, security automation, AI face recognition, fingerprint attendance machine, palm vein recognition, cloud attendance software, vehicle access control, TimeWatch Uae",
+    "biometric attendance system, access control system, baggage scanner, DFMD, boom barrier, parking management system, turnstile gate, full height turnstile, flap barrier, swing gate, visitor management system, UHF reader, UVSS, ANPR camera, automatic bollard, spike barrier, tyre killer, road blocker, security automation, AI face recognition, fingerprint attendance machine, palm vein recognition, cloud attendance software, vehicle access control, TimeWatch",
   alternates: {
-    canonical: "https://www.timewatchuae.com/",
+    canonical: "https://www.timewatchglobal.com/",
   },
   openGraph: {
     title:
@@ -57,9 +58,9 @@ export const metadata = {
     description:
       "Explore TimeWatch’s full range of biometric attendance, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management systems for advanced access control and security automation.",
     type: "website",
-    url: "https://www.timewatchuae.com/",
+    url: "https://www.timewatchglobal.com/",
     siteName: "TimeWatch",
-    locale: "en_IN",
+    locale: "en_US",
   },
 };
 

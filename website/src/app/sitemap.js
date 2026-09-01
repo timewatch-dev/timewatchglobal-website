@@ -2,7 +2,7 @@ import path from "path";
 import { scanFolder } from "@/lib/scanFolder";
 
 export default async function sitemap() {
-  const baseUrl = "https://www.timewatchuae.com";
+  const baseUrl = "https://www.timewatchglobal.com";
 
   // -------- FETCH PRODUCTS --------
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/product`, {
