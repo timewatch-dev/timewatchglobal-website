@@ -63,6 +63,6 @@ jobs:
 
           # Cleanup old releases
           ssh $SSH_OPTIONS $VPS_USER@$VPS_HOST \
-            "cd $WEBSITE_PATH/releases && ls -1dt */ | tail -n +2 | xargs -r rm -rf"
+            "cd $WEBSITE_PATH/releases && ls -1dt */ | tail -n +3 | xargs -r rm -rf"
 
           echo "✅ Website deployment completed successfully"
