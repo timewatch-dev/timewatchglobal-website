@@ -36,14 +36,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Delhi NCR, face attendance machine in Delhi NCR, fingerprint attendance machine in Delhi NCR, biometric attendance Delhi, attendance mach",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-delhi-ncr`,
+    canonical: "/biometric-attendance-system-delhi-ncr",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Chennai | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Chennai including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-delhi-ncr`,
+    url: "/biometric-attendance-system-delhi-ncr",
     siteName: "TimeWatch",
     type: "website",
   },

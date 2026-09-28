@@ -10,7 +10,7 @@ export const metadata = {
     "Simplify attendance & payroll with TimeWatch's free cloud software for up to 250 users. Auto shift, mobile app, field staff tracking & payslip automation.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/workforce-hr-solutions/cloud-attendance-payroll-software",
+      "/solutions/workforce-hr-solutions/cloud-attendance-payroll-software",
   },
 };
 

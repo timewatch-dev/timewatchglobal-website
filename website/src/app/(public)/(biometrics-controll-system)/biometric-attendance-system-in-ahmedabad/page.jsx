@@ -36,14 +36,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Ahmedabad, face attendance machine in Ahmedabad, fingerprint attendance machine in Ahmedabad, attendance machine Ahmedabad, biometric system Ahmedabad",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-ahmedabad`,
+    canonical: "/biometric-attendance-system-in-ahmedabad",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Ahmedabad | Face & Fingerprint Attendance Machine",
     description:
       "TimeWatch provides biometric attendance solutions in Ahmedabad including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-ahmedabad`,
+    url: "/biometric-attendance-system-in-ahmedabad",
     siteName: "TimeWatch",
     type: "website",
   },

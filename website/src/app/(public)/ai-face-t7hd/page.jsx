@@ -35,14 +35,14 @@ export const metadata = {
   keywords:
     "face attendance device, portable attendance device, biometric attendance device, attendance device with battery backup, 4G attendance device, SIM support attendance, group attendance device, construction attendance, hospital attendance, school attendance, factory attendance, timewatch, AI face recognition",
   alternates: {
-    canonical: "https://www.timewatchindia.com/ai-face-t7hd",
+    canonical: "/ai-face-t7hd",
   },
   openGraph: {
     title:
       "Portable Face Attendance Device with Battery Backup & 4G SIM | TimeWatch AI-Face-T7HD",
     description:
       "Experience portable face attendance with 4G SIM, IP68 rugged build, and extended battery backup. Trusted by India's leading organizations.",
-    url: "https://www.timewatchindia.com/ai-face-t7hd",
+    url: "/ai-face-t7hd",
     type: "website",
     images: [
       {

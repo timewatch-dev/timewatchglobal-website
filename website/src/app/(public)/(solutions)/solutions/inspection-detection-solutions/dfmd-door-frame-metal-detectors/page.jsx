@@ -9,7 +9,7 @@ export const metadata = {
     "Ensure secure entry at airports, metro stations, stadiums & offices with TimeWatch Walk-Through Metal Detector. 8-zone detection, audio-visual alerts & high throughput.",
      alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/inspection-detection-solutions/dfmd-door-frame-metal-detectors",
+      "/solutions/inspection-detection-solutions/dfmd-door-frame-metal-detectors",
   },
 };
 

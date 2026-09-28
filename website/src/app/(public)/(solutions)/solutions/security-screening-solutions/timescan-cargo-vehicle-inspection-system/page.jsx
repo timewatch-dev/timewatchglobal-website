@@ -8,7 +8,7 @@ export const metadata = {
   description: "TimeScan Vehicle & Cargo Inspection System | TimeWatch Infocom",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/security-screening-solutions/timescan-cargo-vehicle-inspection-system",
+      "/solutions/security-screening-solutions/timescan-cargo-vehicle-inspection-system",
   },
 };
 

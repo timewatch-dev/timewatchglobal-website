@@ -20,7 +20,7 @@ export const metadata = {
   description:
     "Download BiometricPro software solutions for time attendance, access control, and workforce management systems.",
       alternates: {
-    canonical: "https://www.timewatchindia.com/downloads",
+    canonical: "/downloads",
       }
 };
 

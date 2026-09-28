@@ -23,7 +23,7 @@ export const metadata = {
     "Explore TWLD-TS2700 & TWLD-TS2715 tripod turnstiles with stainless steel design, anti-tailgating sensors, and RFID/biometric integration.",
   openGraph: {
     type: "website",
-    url: "https://www.timewatchindia.com/products/tripod-turnstiles/",
+    url: "/access-control-security-gate-manufacturer-in-India",
     title: "Tripod Turnstiles by TimeWatch – Secure Pedestrian Access Control",
     description:
       "Explore TWLD-TS2700 & TWLD-TS2715 tripod turnstiles with stainless steel design, anti-tailgating sensors, and RFID/biometric integration.",
@@ -46,7 +46,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.timewatchindia.com/products/tripod-turnstiles/",
+    canonical: "/access-control-security-gate-manufacturer-in-India",
   },
 };
 

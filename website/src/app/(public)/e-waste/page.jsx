@@ -11,6 +11,12 @@ import {
   LaptopMinimalCheck,
 } from "lucide-react";
 
+export const metadata = {
+  title: "E-Waste Policy | TimeWatch",
+  description: "TimeWatch e-waste management and responsible recycling policy for biometric, access control and security equipment.",
+  alternates: { canonical: "/e-waste" },
+};
+
 // Assuming these are external imports you need to keep
 
 

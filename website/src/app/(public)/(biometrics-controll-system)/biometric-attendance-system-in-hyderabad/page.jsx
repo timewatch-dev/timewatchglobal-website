@@ -31,14 +31,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Hyderabad, face attendance machine in Hyderabad, fingerprint attendance machine in Hyderabad, biometric system Hyderabad, attendance machine Hyderabad, face recognition attendance Hyderabad",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-hyderabad`,
+    canonical: "/biometric-attendance-system-in-hyderabad",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Hyderabad | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch offers advanced biometric attendance systems in Hyderabad including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-hyderabad`,
+    url: "/biometric-attendance-system-in-hyderabad",
     siteName: "TimeWatch",
     type: "website",
   },

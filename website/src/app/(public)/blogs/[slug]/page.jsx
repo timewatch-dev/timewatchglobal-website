@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
     title: blog.title,
     description: blog.description,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`,
+      canonical: `/blogs/${blog.slug}`,
     },
     openGraph: {
       title: blog.title,

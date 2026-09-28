@@ -10,7 +10,7 @@ export const metadata = {
     "Automate canteen management with TimeWatch India. Biometric meal access, RFID, cashless dining & real-time reports for corporates, factories, hospitals & universities. Reduce wastage, save costs & improve satisfaction.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/facility-membership-management/canteen-management-system",
+      "/solutions/facility-membership-management/canteen-management-system",
   },
 };
 

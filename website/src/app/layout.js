@@ -40,9 +40,6 @@ export const metadata = {
     "Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions | TimeWatch",
   description:
     "TimeWatch provides biometric attendance systems, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management solutions for smart access control and security automation across India, the UAE, Saudi Arabia and international markets.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     siteName: "TimeWatch",

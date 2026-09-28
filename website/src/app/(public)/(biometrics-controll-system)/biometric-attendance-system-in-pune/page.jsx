@@ -37,14 +37,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Pune, face attendance machine in Pune, fingerprint attendance machine in Pune, attendance machine Pune, biometric system Pune",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-pune`,
+    canonical: "/biometric-attendance-system-in-pune",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Pune | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides biometric attendance systems in Pune including face attendance machines and fingerprint attendance machines. Ideal for IT companies, factories, hospitals, colleges and offices across Hinjawadi, Magarpatta, Kharadi and Pimpri Chinchwad.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-pune`,
+    url: "/biometric-attendance-system-in-pune",
     siteName: "TimeWatch",
     type: "website",
   },

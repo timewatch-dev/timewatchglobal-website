@@ -36,14 +36,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Mumbai, face attendance machine in Mumbai, fingerprint attendance machine in Mumbai, attendance machine Mumbai, attendance device Thane, biometric system Navi Mumbai, face recognition attendance Mumbai, fingerprint attendance Navi Mumbai",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-mumbai`,
+    canonical: "/biometric-attendance-system-in-mumbai",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Mumbai | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch offers advanced biometric attendance systems in Mumbai including face attendance machines and fingerprint attendance machines. Ideal for offices, factories, hospitals and schools across Mumbai, Navi Mumbai and Thane.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-mumbai`,
+    url: "/biometric-attendance-system-in-mumbai",
     siteName: "TimeWatch",
     type: "website",
   },

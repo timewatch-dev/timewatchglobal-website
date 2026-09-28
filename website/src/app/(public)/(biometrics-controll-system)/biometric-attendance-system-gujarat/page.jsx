@@ -37,14 +37,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Gujarat, face attendance machine in Gujarat, fingerprint attendance machine in Gujarat, attendance machine Ahmedabad, biometric Gujarat",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-gujarat`,
+    canonical: "/biometric-attendance-system-gujarat",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Gujarat | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Gujarat including face and fingerprint attendance devices.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-gujarat`,
+    url: "/biometric-attendance-system-gujarat",
     siteName: "TimeWatch",
     type: "website",
   },

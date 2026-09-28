@@ -14,6 +14,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Privacy Policy | TimeWatch",
+  description: "How TimeWatch collects, uses and protects personal data on timewatchglobal.com.",
+  alternates: { canonical: "/privacy-policy" },
+};
+
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-page">

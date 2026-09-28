@@ -9,7 +9,7 @@ export const metadata = {
     "nhance vehicle security with TimeScan cargo & car inspection system. Dual-energy X-ray scanning, high penetration, ALPR integration. Trusted across India & UAE.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/inspection-detection-solutions/timescan-cargo-vehicle-inspection-system",
+      "/solutions/inspection-detection-solutions/timescan-cargo-vehicle-inspection-system",
   },
 };
 

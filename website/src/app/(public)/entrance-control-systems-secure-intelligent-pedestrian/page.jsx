@@ -25,7 +25,7 @@ export const metadata = {
     "entrance control systems, pedestrian access control, full height turnstile, tripod turnstile, swing barrier gate, flap barrier, P-Type gate, access control gates, biometric access control, RFID gate, automatic gate manufacturer, entrance control manufacturer in India, TimeWatch India",
   openGraph: {
     type: "website",
-    url: "https://www.timewatchindia.com/products/entrance-control/",
+    url: "/entrance-control-systems-secure-intelligent-pedestrian",
     title:
       "Entrance Control Systems by TimeWatch – Secure & Intelligent Pedestrian Access",
     description:
@@ -49,7 +49,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.timewatchindia.com/products/entrance-control/",
+    canonical: "/entrance-control-systems-secure-intelligent-pedestrian",
   },
 };
 

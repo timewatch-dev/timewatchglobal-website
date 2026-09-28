@@ -1,7 +1,5 @@
-# robots.txt for https://www.timewatchindia.com
-# Allow all public pages, but block backend and API routes
-
+# robots.txt for https://www.timewatchglobal.com
 User-agent: *
 Allow: /
 
-Sitemap: https://www.timewatchindia.com/sitemap.xml
+Sitemap: https://www.timewatchglobal.com/sitemap.xml

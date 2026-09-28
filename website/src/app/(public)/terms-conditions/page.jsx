@@ -14,6 +14,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Terms & Conditions | TimeWatch",
+  description: "Terms and conditions for using the TimeWatch website and services.",
+  alternates: { canonical: "/terms-conditions" },
+};
+
 const termAndCondition = () => {
   return (
     <div className="privacy-policy-page">

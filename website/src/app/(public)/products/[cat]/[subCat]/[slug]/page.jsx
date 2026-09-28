@@ -4,7 +4,7 @@ import ProductDetails from "@/components/ProductDetails";
 import axiosInstance from "@/lib/axiosInstance";
 import { notFound } from "next/navigation";
 
-const BASE_URL = "https://www.timewatchindia.com";
+const BASE_URL = "https://www.timewatchglobal.com";
 
 // 🧠 Generate metadata dynamically
 export async function generateMetadata({ params }) {
@@ -13,8 +13,6 @@ export async function generateMetadata({ params }) {
   try {
     const res = await axiosInstance.get(`/product/slug/${slug}`);
     const product = res?.data?.product;
-
-    console.log(":product", product)
 
     if (!product || product?.status === "draft") {
       return {};
@@ -25,12 +23,12 @@ export async function generateMetadata({ params }) {
       description:
         product.description || product.shortDesc || product.productName,
       alternates: {
-        canonical: `${BASE_URL}/poducts/${cat}/${subCat}/${slug}`,
+        canonical: `${BASE_URL}/products/${cat}/${subCat}/${slug}`,
       },
       openGraph: {
         title: product.productName,
         description: product.description || product.shortDesc,
-        url: `${BASE_URL}/poducts/${cat}/${subCat}/${slug}`,
+        url: `${BASE_URL}/products/${cat}/${subCat}/${slug}`,
         images: product.productImage
       },
     };

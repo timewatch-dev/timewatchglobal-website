@@ -10,7 +10,7 @@ export const metadata = {
     "Secure workplaces with TimeWatch Access Control Systems. Biometric face, fingerprint & RFID terminals integrated with HRMS. Trusted in India, Dubai & GCC.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/security-screening-solutions/access-control-system-terminals",
+      "/solutions/security-screening-solutions/access-control-system-terminals",
   },
 };
 

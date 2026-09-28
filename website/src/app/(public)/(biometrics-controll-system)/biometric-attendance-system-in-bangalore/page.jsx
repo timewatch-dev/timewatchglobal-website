@@ -36,14 +36,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Bangalore, face attendance machine in Bangalore, fingerprint attendance machine in Bangalore, attendance machine Bangalore, attendance device Bengaluru, face recognition attendance Bangalore, biometric device Bangalore",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-bangalore`,
+    canonical: "/biometric-attendance-system-in-bangalore",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Bangalore | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Bangalore including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-bangalore`,
+    url: "/biometric-attendance-system-in-bangalore",
     siteName: "TimeWatch",
     type: "website",
   },

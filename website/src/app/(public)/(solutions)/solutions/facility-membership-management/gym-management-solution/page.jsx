@@ -9,7 +9,7 @@ export const metadata = {
     "Manage memberships, billing, trainers & attendance with TimeWatch Gym Management Software. Scalable for gyms in India, UAE, and the Middle East.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/facility-membership-management/gym-management-solution",
+      "/solutions/facility-membership-management/gym-management-solution",
   },
 };
 

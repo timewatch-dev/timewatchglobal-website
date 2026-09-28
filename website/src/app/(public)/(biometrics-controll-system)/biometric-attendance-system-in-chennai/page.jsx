@@ -35,14 +35,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Chennai, face attendance machine in Chennai, fingerprint attendance machine in Chennai, attendance machine Chennai, biometric device Chennai",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-chennai`,
+    canonical: "/biometric-attendance-system-in-chennai",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Chennai | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Chennai including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-chennai`,
+    url: "/biometric-attendance-system-in-chennai",
     siteName: "TimeWatch",
     type: "website",
   },

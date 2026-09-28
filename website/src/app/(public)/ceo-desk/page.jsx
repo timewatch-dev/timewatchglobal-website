@@ -25,7 +25,7 @@ export const metadata = {
   description:
     "At TimeWatch, our mission is to simplify security through innovation – powered by technology and built on trust. We are committed to developing intelligent, efficient, and reliable solutions that redefine how organizations protect, manage, and connect",
      alternates: {
-    canonical: "https://www.timewatchindia.com/ceo-desk",
+    canonical: "/ceo-desk",
   },
 };
 

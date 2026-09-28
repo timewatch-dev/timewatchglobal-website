@@ -9,7 +9,7 @@ export const metadata = {
     "Track your field staff in real time with TimeWatch. GPS-based live tracking, task verification with photos, and automated reports for payroll & compliance.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/workforce-hr-solutions/field-staff-tracking-solution",
+      "/solutions/workforce-hr-solutions/field-staff-tracking-solution",
   },
 };
 

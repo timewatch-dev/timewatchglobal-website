@@ -9,7 +9,7 @@ export const metadata = {
     "Secure your premises with TW3300 UVSS by TimeWatch. High-resolution under-vehicle scanning, ALPR integration, and real-time monitoring for airports, metro, government buildings, and events.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/inspection-detection-solutions/under-vehicle-surveillance-system-uvss-tw3300",
+      "/solutions/inspection-detection-solutions/under-vehicle-surveillance-system-uvss-tw3300",
   },
 };
 

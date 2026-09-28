@@ -1,6 +1,12 @@
 import React from "react";
 import { Users, Award, Globe, TrendingUp, Shield, CheckCircle } from "lucide-react";
 
+export const metadata = {
+  title: "Our Clients | TimeWatch",
+  description: "TimeWatch is trusted by 1,500+ enterprises with 10,000+ installations across 10+ countries.",
+  alternates: { canonical: "/clients" },
+};
+
 // Note: In Next.js, replace this with: import Image from "next/image";
 const Image = ({ src, alt, className, width, height }) => (
   <img src={src} alt={alt} className={className} width={width} height={height} />

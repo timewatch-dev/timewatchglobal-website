@@ -9,7 +9,7 @@ export const metadata = {
     "Enable secure mobile attendance with TimeWatch’s geo-fencing solution. Prevent buddy punching, ensure location-based clock-ins, and boost accountability.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/workforce-hr-solutions/geo-fencing-mobile-punch",
+      "/solutions/workforce-hr-solutions/geo-fencing-mobile-punch",
   },
 };
 
