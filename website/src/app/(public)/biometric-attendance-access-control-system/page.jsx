@@ -577,7 +577,7 @@ const BiometricAttendancePage = () => {
                 </p>
                 <p className="md:text-xl font-semibold">
                   Email:&nbsp;
-                  <span>mohsin@timewatchglobal.com.com</span>
+                  <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <div className="mt-6">

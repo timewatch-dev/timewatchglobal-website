@@ -375,7 +375,7 @@ const termAndCondition = () => {
                         If you have any questions about this Privacy Policy, You
                         can contact us:
                         <ul>
-                          <li>By email: mohsin@timewatchglobal.com.com</li>
+                          <li>By email: mohsin@timewatchglobal.com</li>
                           <li>
                             By visiting this page on our website:
                             www.timewatchuae.com

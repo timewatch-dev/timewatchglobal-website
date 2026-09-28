@@ -163,7 +163,7 @@ const FAQPage = () => {
         },
         {
           q: "How can I get TimeWatch devices or request a demo?",
-          a: "You can contact TimeWatch through our official websites www.timewatchindia.com or www.timewatchuae.com to request a demo, product quotation, or consultation for your organization's security, attendance, or access control requirements. You can also reach us at +91 95999 53923 or email mohsin@timewatchglobal.com.com."
+          a: "You can contact TimeWatch through our official websites www.timewatchindia.com or www.timewatchuae.com to request a demo, product quotation, or consultation for your organization's security, attendance, or access control requirements. You can also reach us at +91 95999 53923 or email mohsin@timewatchglobal.com."
         }
       ]
     }

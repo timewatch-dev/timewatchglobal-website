@@ -802,10 +802,10 @@ export default async function HomePage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:mohsin@timewatchglobal.com.com"
+                      href="mailto:mohsin@timewatchglobal.com"
                       className="text-gray-600"
                     >
-                      mohsin@timewatchglobal.com.com
+                      mohsin@timewatchglobal.com
                     </a>
                     
                   </div>
@@ -820,7 +820,7 @@ export default async function HomePage() {
                       Address
                     </h3>
                     <p className="text-gray-600">
-                      {"Building no. 08R-SH Saih Shuaib2, Plot no.176-0 Dubai"}
+                      {"Office 404-09, 4th Floor, Mohammad Saeed Hareb Building, 29 Al Ittihad Rd, Port Saeed, Deira, Dubai, UAE"}
                     </p>
                   </div>
                 </div>

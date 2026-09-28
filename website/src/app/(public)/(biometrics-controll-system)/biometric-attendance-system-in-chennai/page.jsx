@@ -307,10 +307,10 @@ export default function BiometricAttendanceChennai() {
               <p>
                 <span className="font-semibold">Email:</span>{" "}
                 <a
-                  href="mailto:mohsin@timewatchglobal.com.com"
+                  href="mailto:mohsin@timewatchglobal.com"
                   className="text-secondary"
                 >
-                  mohsin@timewatchglobal.com.com
+                  mohsin@timewatchglobal.com
                 </a>
               </p>
             </div>
@@ -575,7 +575,7 @@ export default function BiometricAttendanceChennai() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>mohsin@timewatchglobal.com.com</span>
+                  Email: <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">
