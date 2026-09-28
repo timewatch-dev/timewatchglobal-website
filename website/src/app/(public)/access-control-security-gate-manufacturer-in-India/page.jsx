@@ -45,6 +45,8 @@ export const metadata = {
       "https://www.timewatchindia.com/assets/images/tripod-turnstiles-banner.jpg",
     ],
   },
+  // India-targeted page: not indexed on the global site (served on timewatchindia.com).
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "/access-control-security-gate-manufacturer-in-India",
   },

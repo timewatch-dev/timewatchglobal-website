@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Rajdhani } from "next/font/google";
-// import GTM from "@/components/GTM";
+import GTM from "@/components/GTM";
 import ClientLayout from "@/components/ClientLayout"; // ✅ New client wrapper
 
 const rajdhani = Rajdhani({
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      {/* <GTM /> */}
+      <GTM />
       <body className={rajdhani.className}>
         <ClientLayout>{children}</ClientLayout>
       </body>

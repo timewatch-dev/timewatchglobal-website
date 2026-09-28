@@ -25,6 +25,13 @@ import HomePageForm from "@/components/HomePageForm";
 import ProductCatCard from "@/features/singleProductByCat/components/ProductCatCard";
 import BioCards from "@/components/landing/BioCards";
 
+// India-targeted page: not indexed on the global site (served on timewatchindia.com).
+export const metadata = {
+  title: "Biometric Attendance System in India | TimeWatch",
+  description: "TimeWatch biometric attendance systems for businesses in India.",
+  robots: { index: false, follow: true },
+};
+
 export default function BiometricAttendancePage() {
   const systems = [
     /* Face Recognition Attendance System */
