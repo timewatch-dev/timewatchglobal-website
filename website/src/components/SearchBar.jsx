@@ -57,7 +57,7 @@ export function SearchBar() {
     setOpen(false);
   };
 
-  console.log("results", results)
+  // console.log("results", results)
 
   return (
     <>
@@ -71,28 +71,49 @@ export function SearchBar() {
         </div>
       </button>
 
-      <CommandDialog open={open} onOpenChange={setOpen} className={'h-[20rem]'}>
+      {/* Results are already filtered/ranked by the API (name, keywords,
+          category and sub-category). Let cmdk's own fuzzy filter run on top and
+          it throws away every category match whose product name doesn't contain
+          the query — so turn it off. */}
+      <CommandDialog
+        open={open}
+        onOpenChange={setOpen}
+        shouldFilter={false}
+        className={'h-[20rem]'}
+      >
         <CommandInput
-          placeholder="Search products..."
+          placeholder="Search by product, category or sub-category..."
           value={query}
           onValueChange={setQuery}
         />
         <CommandList>
-          <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Products">
-            {results?.map((p) => (
-              <CommandItem
-                key={p._id}
-                 value={p.productName}
-                onSelect={() => handleSelect(p)}
-                className="cursor-pointer"
-              >
-                <ChevronRightIcon className="mr-2 h-4 w-4" />
-                {console.log(p.productName)}
-                {p.productName}
-              </CommandItem>
-            ))}
-          </CommandGroup>
+          <CommandEmpty>
+            {query.trim() ? "No results found." : "Start typing to search."}
+          </CommandEmpty>
+          {results?.length > 0 && (
+            <CommandGroup heading="Products">
+              {results.map((p) => (
+                <CommandItem
+                  key={p._id}
+                  value={p._id}
+                  onSelect={() => handleSelect(p)}
+                  className="cursor-pointer"
+                >
+                  <ChevronRightIcon className="mr-2 h-4 w-4 shrink-0" />
+                  <span className="flex flex-col">
+                    <span>{p.productName}</span>
+                    {(p.subCategoryName || p.categoryName) && (
+                      <span className="text-xs text-muted-foreground">
+                        {[p.categoryName, p.subCategoryName]
+                          .filter(Boolean)
+                          .join(" › ")}
+                      </span>
+                    )}
+                  </span>
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          )}
         </CommandList>
       </CommandDialog>
     </>
