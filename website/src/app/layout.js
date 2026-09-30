@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Rajdhani } from "next/font/google";
-import GTM from "@/components/GTM";
+// Off until this site has its own GTM container. The fallback in GTM.jsx is
+// GTM-NNJTRPC, which is India's, and the deploy builds without an .env, so
+// setting NEXT_PUBLIC_GTM_ID would not change what ships.
+// import GTM from "@/components/GTM";
 import ClientLayout from "@/components/ClientLayout"; // ✅ New client wrapper
 
 const rajdhani = Rajdhani({
@@ -86,7 +89,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <GTM />
+      {/* <GTM /> */}
       <body className={rajdhani.className}>
         <ClientLayout>{children}</ClientLayout>
       </body>
