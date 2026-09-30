@@ -1,15 +1,32 @@
 import path from "path";
 import { scanFolder } from "@/lib/scanFolder";
 
-export default async function sitemap() {
-  const baseUrl = "https://www.timewatchglobal.com";
+const baseUrl = "https://www.timewatchglobal.com";
 
-  // -------- FETCH PRODUCTS --------
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/product`, {
-    cache: "no-store",
-  });
-  const data = await res.json();
-  const products = data.products || [];
+// The deploy builds without an .env, so this fallback is what runs in
+// production. nginx routes /api/ to this site's own backend.
+const apiBase = process.env.NEXT_PUBLIC_API_URL || `${baseUrl}/api`;
+
+// /product returns a projection without slugs; /product/formated-product
+// returns them, grouped category > subCategory > products, already filtered
+// to published items.
+async function fetchProductTree() {
+  try {
+    const res = await fetch(`${apiBase}/product/formated-product`, {
+      cache: "no-store",
+    });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data.products) ? data.products : [];
+  } catch {
+    // A sitemap missing its product URLs is recoverable; one that 500s on
+    // every crawl is not.
+    return [];
+  }
+}
+
+export default async function sitemap() {
+  const categories = await fetchProductTree();
 
   // -------- STATIC PAGES --------
   const staticPages = [
@@ -36,7 +53,6 @@ export default async function sitemap() {
 
   const staticUrls = staticPages.map((page) => ({
     url: `${baseUrl}/${page}`,
-    
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: page === "" ? 1.0 : 0.8,
@@ -54,35 +70,47 @@ export default async function sitemap() {
   const solutionUrls = scanFolder(solutionsDir, `${baseUrl}/solutions`);
   // India city pages are noindex on the global site, so they are not listed here.
 
-  // -------- CATEGORY URLs --------
-  const categorySet = new Set(products.map((p) => p.categorySlug));
+  // -------- PRODUCT URLs --------
+  const categoryUrls = [];
+  const subcategoryUrls = [];
+  const productUrls = [];
 
-  const categoryUrls = [...categorySet].map((cat) => ({
-    url: `${baseUrl}/products/${cat}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.9,
-  }));
+  for (const category of categories) {
+    const cat = category?.categorySlug;
+    if (!cat) continue;
 
-  // -------- SUBCATEGORY URLs --------
-  const subcategorySet = new Set(
-    products.map((p) => `${p.categorySlug}/${p.subCategorySlug}`)
-  );
+    categoryUrls.push({
+      url: `${baseUrl}/products/${cat}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    });
 
-  const subcategoryUrls = [...subcategorySet].map((path) => ({
-    url: `${baseUrl}/products/${path}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.85,
-  }));
+    for (const subCategory of category.subCategories || []) {
+      const sub = subCategory?.subCategorySlug;
+      if (!sub) continue;
 
-  // -------- INDIVIDUAL PRODUCT URLs --------
-  const productUrls = products.map((p) => ({
-    url: `${baseUrl}/products/${p.categorySlug}/${p.subCategorySlug}/${p.productSlug}`,
-    lastModified: p.updatedAt || new Date(),
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+      subcategoryUrls.push({
+        url: `${baseUrl}/products/${cat}/${sub}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.85,
+      });
+
+      for (const product of subCategory.products || []) {
+        const slug = product?.productSlug;
+        if (!slug) continue;
+
+        productUrls.push({
+          url: `${baseUrl}/products/${cat}/${sub}/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly",
+          priority: 0.7,
+        });
+      }
+    }
+  }
+
   // -------- FINAL RETURN --------
   return [
     ...staticUrls,
@@ -92,4 +120,3 @@ export default async function sitemap() {
     ...productUrls,
   ];
 }
-
