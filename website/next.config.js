@@ -13,8 +13,20 @@ const nextConfig = {
       "preview.timewatchindia.com",
       "arabia.backend.timewatchindia.com",
       "timewatchuae.com",
+      "timewatchglobal.com",
+      "www.timewatchglobal.com",
     ],
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.timewatchglobal.com",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "timewatchglobal.com",
+        pathname: "/uploads/**",
+      },
       {
         protocol: "https",
         hostname: "cdn.timewatchindia.com",
