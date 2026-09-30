@@ -61,12 +61,29 @@ jobs:
           ssh $SSH_OPTIONS $VPS_USER@$VPS_HOST \
             "cd $BACKEND_PATH/releases/$TIMESTAMP && npm install --production"
 
-          # Health check the new release without touching live PM2
-          ssh $SSH_OPTIONS $VPS_USER@$VPS_HOST \
-            "cd $BACKEND_PATH/releases/$TIMESTAMP && \
-            timeout 10s node app.js > /tmp/global-backend-test.log 2>&1 || true && \
-            sleep 3 && \
-            curl -fs http://127.0.0.1:5003/api/health"
+          # Health check the new release without touching live PM2.
+          # Runs on a scratch port so it tests THIS release rather than whatever
+          # pm2 already has listening on 5003, and so it cannot collide with it.
+          # PORT is passed in the environment; dotenv does not override variables
+          # that are already set, so it wins over PORT=5003 in shared/.env.
+          ssh $SSH_OPTIONS $VPS_USER@$VPS_HOST "
+            cd $BACKEND_PATH/releases/$TIMESTAMP &&
+            PORT=5903 node app.js > /tmp/global-backend-test.log 2>&1 &
+            TESTPID=\$!
+            OK=0
+            for i in \$(seq 1 20); do
+              if curl -fs http://127.0.0.1:5903/api/health > /dev/null; then OK=1; break; fi
+              sleep 1
+            done
+            kill \$TESTPID 2>/dev/null || true
+            wait \$TESTPID 2>/dev/null || true
+            if [ \"\$OK\" != \"1\" ]; then
+              echo '❌ New release failed to serve /api/health:'
+              cat /tmp/global-backend-test.log
+              exit 1
+            fi
+            echo '✅ New release healthy'
+          "
 
           # Switch current symlink (atomic)
           ssh $SSH_OPTIONS $VPS_USER@$VPS_HOST \
