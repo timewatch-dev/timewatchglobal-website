@@ -31,14 +31,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Hyderabad, face attendance machine in Hyderabad, fingerprint attendance machine in Hyderabad, biometric system Hyderabad, attendance machine Hyderabad, face recognition attendance Hyderabad",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-hyderabad`,
+    canonical: "/biometric-attendance-system-in-hyderabad",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Hyderabad | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch offers advanced biometric attendance systems in Hyderabad including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-hyderabad`,
+    url: "/biometric-attendance-system-in-hyderabad",
     siteName: "TimeWatch",
     type: "website",
   },
@@ -544,7 +544,7 @@ export default function BiometricAttendanceHyderabad() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>mohsin@timewatchglobal.com.com</span>
+                  Email: <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">

@@ -8,6 +8,12 @@ import Image from "next/image";
 import Link from "next/link";
 import seoFriendlySlug from "@/lib/seoFriendlySlug";
 
+export const metadata = {
+  title: "Security & Workforce Solutions | TimeWatch",
+  description: "TimeWatch solutions for attendance and payroll, access control, entrance automation, visitor management, security screening and parking.",
+  alternates: { canonical: "/solutions" },
+};
+
 const page = () => {
   const sols = solutions.flatMap((cat) =>
     cat?.subCategories.map((subCat) => {

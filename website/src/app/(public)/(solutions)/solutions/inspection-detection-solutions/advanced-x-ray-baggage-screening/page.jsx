@@ -9,7 +9,7 @@ export const metadata = {
     "Secure high-traffic facilities with TimeWatch’s advanced X-Ray baggage scanners. Deploy AI-enhanced screening at airports, metro stations, stadiums, and more across India and the Gulf.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
+      "/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
   },
 };
 

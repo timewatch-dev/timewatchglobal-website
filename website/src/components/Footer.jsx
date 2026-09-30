@@ -166,8 +166,13 @@ const Footer = () => {
               </li>
               <li className="flex flex-col leading-[20px]">
                 <span className="text-white pr-2 font-semibold">Address:</span>
-                <a href="#" className="hover:text-white transition-colors">
-                  Building no. 08R-SH Saih Shuaib2, Plot no.176-0 Dubai
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Mohammad+Saeed+Hareb+Building+29+Al+Ittihad+Rd+Port+Saeed+Deira+Dubai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  Office 404-09, 4th Floor, Mohammad Saeed Hareb Building, 29 Al Ittihad Rd, Port Saeed, Deira, Dubai, UAE
                 </a>
               </li>
             </ul>

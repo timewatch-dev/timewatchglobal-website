@@ -9,7 +9,7 @@ export const metadata = {
     "Buy TimeWatch TW-HH100 Hand Held Metal Detector | portable, lightweight, and accurate device for airports, metros, stadiums & corporate offices across India & GCC.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/inspection-detection-solutions/hand-held-metal-detector-tw-hh100",
+      "/solutions/inspection-detection-solutions/hand-held-metal-detector-tw-hh100",
   },
 };
 

@@ -13,8 +13,8 @@ const rajdhani = Rajdhani({
 
 
 export const metadata = {
-  title: "Baggage Scanners, Time Attendance & Access Control Systems | TimeWatch Infocom",
-  description: "TimeWatch Infocom provides trusted baggage scanners, time attendance, and access control systems across India, delivering smart, secure tech solutions.",
+  title: "Baggage Scanners, Time Attendance & Access Control Systems | TimeWatch",
+  description: "TimeWatch manufactures biometric attendance, access control, turnstiles, flap barriers, baggage scanners and parking systems for the Middle East, Africa and international markets.",
 };
 
 export default function RootLayout({ children }) {

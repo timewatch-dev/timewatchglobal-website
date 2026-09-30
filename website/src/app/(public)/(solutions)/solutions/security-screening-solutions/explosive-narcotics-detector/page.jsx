@@ -10,7 +10,7 @@ export const metadata = {
     "The TW-NE200 portable detector identifies explosives and narcotics using ion mobility spectrometry. Fast, accurate, and lightweight, it delivers results within 3 seconds for airports, customs, and border security.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/security-screening-solutions/explosive-narcotics-detector",
+      "/solutions/security-screening-solutions/explosive-narcotics-detector",
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
     "Simplify visitor check-in and enhance workplace security with TimeWatch Visitor Management System. Ideal for offices, hospitals, schools & factories across India, UAE & GCC.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/visitor-access-management/what-is-a-visitor-management-system",
+      "/solutions/visitor-access-management/what-is-a-visitor-management-system",
   },
 };
 

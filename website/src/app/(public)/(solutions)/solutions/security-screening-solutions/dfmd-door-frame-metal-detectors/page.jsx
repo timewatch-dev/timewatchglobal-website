@@ -10,7 +10,7 @@ export const metadata = {
     "Discover TimeWatch Door Frame Metal Detectors with 6, 12, and 24-zone detection. Perfect for airports, metros, stadiums, schools, malls, and corporate offices across India, the UAE, and the GCC.",
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/solutions/security-screening-solutions/dfmd-door-frame-metal-detectors",
+      "/solutions/security-screening-solutions/dfmd-door-frame-metal-detectors",
   },
 };
 

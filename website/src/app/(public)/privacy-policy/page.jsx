@@ -14,6 +14,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Privacy Policy | TimeWatch",
+  description: "How TimeWatch collects, uses and protects personal data on timewatchglobal.com.",
+  alternates: { canonical: "/privacy-policy" },
+};
+
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-page">
@@ -36,11 +42,11 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <a
-                        href="mailto:mohsin@timewatchglobal.com.com"
+                        href="mailto:mohsin@timewatchglobal.com"
                         className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                       >
                         <Mail className="w-4 h-4 mr-2" />
-                        mohsin@timewatchglobal.com.com
+                        mohsin@timewatchglobal.com
                       </a>
                       <a
                         href="https://www.timewatchindia.com"
@@ -730,7 +736,7 @@ const PrivacyPolicy = () => {
                     If you have any questions about this Privacy Policy, You can
                     contact us:
                     <ul className="">
-                      <li>By email: mohsin@timewatchglobal.com.com</li>
+                      <li>By email: mohsin@timewatchglobal.com</li>
                       <li>
                         By visiting this page on our website:
                         www.timewatchindia.com

@@ -14,6 +14,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Disclaimer | TimeWatch",
+  description: "Legal disclaimer for the TimeWatch website.",
+  alternates: { canonical: "/disclaimer" },
+};
+
 const disclaimerPage = () => {
   return (
     <div className="privacy-policy-page">

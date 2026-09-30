@@ -39,14 +39,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Jaipur, face attendance machine in Jaipur, fingerprint attendance machine in Jaipur, attendance machine Jaipur, biometric system Jaipur",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-jaipur`,
+    canonical: "/biometric-attendance-system-in-jaipur",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Jaipur | Face & Fingerprint Attendance Machine",
     description:
       "TimeWatch provides biometric attendance systems in Jaipur including face attendance machines and fingerprint attendance machines. Trusted by schools, hospitals, factories and offices across Mansarovar, Vaishali Nagar, Sitapura and MI Road.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-jaipur`,
+    url: "/biometric-attendance-system-in-jaipur",
     siteName: "TimeWatch",
     type: "website",
   },
@@ -708,7 +708,7 @@ export default function BiometricAttendanceHyderabad() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>mohsin@timewatchglobal.com.com</span>
+                  Email: <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">

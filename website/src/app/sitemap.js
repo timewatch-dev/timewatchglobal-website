@@ -15,11 +15,9 @@ export default async function sitemap() {
   const staticPages = [
     "",
     "about",
-    "access-control-security-gate-manufacturer-in-India",
     "ai-face-t7hd",
     "biometric-attendance-access-control-system",
     "biometric-attendance-system-bio-1se-india",
-    "biometric-attendance-system-in-india",
     "blogs",
     "careers",
     "ceo-desk",
@@ -53,17 +51,8 @@ export default async function sitemap() {
     "(solutions)",
     "solutions"
   );
-  // -------- (biometrics-controll-system) PAGES (Nested Folder Scan) --------
-  const biosDir = path.join(
-    process.cwd(),
-    "src",
-    "app",
-    "(public)",
-    "(biometrics-controll-system)"
-  );
-
   const solutionUrls = scanFolder(solutionsDir, `${baseUrl}/solutions`);
-  const bioUrls = scanFolder(biosDir, `${baseUrl}`);
+  // India city pages are noindex on the global site, so they are not listed here.
 
   // -------- CATEGORY URLs --------
   const categorySet = new Set(products.map((p) => p.categorySlug));
@@ -94,20 +83,10 @@ export default async function sitemap() {
     changeFrequency: "weekly",
     priority: 0.7,
   }));
-  console.log(":len", [
-    ...staticUrls,
-    ...solutionUrls,
-    ...bioUrls,
-    ...categoryUrls,
-    ...subcategoryUrls,
-    ...productUrls,
-  ].length)
-
   // -------- FINAL RETURN --------
   return [
     ...staticUrls,
     ...solutionUrls,
-    ...bioUrls,
     ...categoryUrls,
     ...subcategoryUrls,
     ...productUrls,

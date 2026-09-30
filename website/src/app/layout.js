@@ -1,5 +1,8 @@
 import "./globals.css";
 import { Rajdhani } from "next/font/google";
+// Off until this site has its own GTM container. The fallback in GTM.jsx is
+// GTM-NNJTRPC, which is India's, and the deploy builds without an .env, so
+// setting NEXT_PUBLIC_GTM_ID would not change what ships.
 // import GTM from "@/components/GTM";
 import ClientLayout from "@/components/ClientLayout"; // ✅ New client wrapper
 
@@ -18,6 +21,24 @@ const organizationSchema = {
   "alternateName": ["TimeWatch India", "TimeWatch UAE", "TimeWatch Arabia"],
   "url": "https://www.timewatchglobal.com",
   "logo": "https://www.timewatchglobal.com/timewatch-logo.svg",
+  "slogan": "Presence perfect",
+  "foundingDate": "2015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office 404-09, 4th Floor, Mohammad Saeed Hareb Building, 29 Al Ittihad Road, Port Saeed, Deira",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE",
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "telephone": "+971-52-374-4121",
+      "email": "mohsin@timewatchglobal.com",
+      "areaServed": ["AE", "SA", "KW", "OM", "BH", "EG", "QA", "NG", "KE"],
+      "availableLanguage": ["English", "Arabic"],
+    },
+  ],
   "sameAs": [
     "https://www.timewatchindia.com",
     "https://www.timewatchuae.com",
@@ -40,9 +61,6 @@ export const metadata = {
     "Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions | TimeWatch",
   description:
     "TimeWatch provides biometric attendance systems, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management solutions for smart access control and security automation across India, the UAE, Saudi Arabia and international markets.",
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     siteName: "TimeWatch",

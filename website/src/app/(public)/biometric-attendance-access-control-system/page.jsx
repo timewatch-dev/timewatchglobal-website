@@ -26,7 +26,7 @@ export const metadata = {
     "biometric attendance system, biometric access control, face recognition device, fingerprint attendance machine, palm recognition, iris access control, AI biometric system, Wi-Fi attendance machine, cloud-based attendance, TimeWatch India",
   openGraph: {
     type: "website",
-    url: "https://www.timewatchindia.com/time-attendance-and-access-control/",
+    url: "/biometric-attendance-access-control-system",
     title: "Biometric Attendance & Access Control Systems – TimeWatch India",
     description:
       "AI-powered Face Recognition, Fingerprint, Palm & Iris Biometric Devices. Cloud-connected, Wi-Fi enabled systems for offices, factories, schools & government facilities.",
@@ -50,7 +50,7 @@ export const metadata = {
   },
   alternates: {
     canonical:
-      "https://www.timewatchindia.com/time-attendance-and-access-control/",
+      "/biometric-attendance-access-control-system",
   },
 };
 
@@ -577,7 +577,7 @@ const BiometricAttendancePage = () => {
                 </p>
                 <p className="md:text-xl font-semibold">
                   Email:&nbsp;
-                  <span>mohsin@timewatchglobal.com.com</span>
+                  <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <div className="mt-6">

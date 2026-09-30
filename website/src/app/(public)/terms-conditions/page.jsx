@@ -14,6 +14,12 @@ import {
   CheckCircle,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Terms & Conditions | TimeWatch",
+  description: "Terms and conditions for using the TimeWatch website and services.",
+  alternates: { canonical: "/terms-conditions" },
+};
+
 const termAndCondition = () => {
   return (
     <div className="privacy-policy-page">
@@ -369,7 +375,7 @@ const termAndCondition = () => {
                         If you have any questions about this Privacy Policy, You
                         can contact us:
                         <ul>
-                          <li>By email: mohsin@timewatchglobal.com.com</li>
+                          <li>By email: mohsin@timewatchglobal.com</li>
                           <li>
                             By visiting this page on our website:
                             www.timewatchuae.com

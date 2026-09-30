@@ -31,14 +31,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Kolkata, face attendance machine in Kolkata, fingerprint attendance machine in Kolkata, attendance machine Kolkata, biometric system Kolkata",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-kolkata`,
+    canonical: "/biometric-attendance-system-in-kolkata",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Kolkata | Face & Fingerprint Attendance Machine",
     description:
       "TimeWatch provides biometric attendance systems in Kolkata including face attendance machines and fingerprint attendance machines. Perfect for IT offices, factories, hospitals, schools and corporates across Salt Lake, New Town and Park Street.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-in-kolkata`,
+    url: "/biometric-attendance-system-in-kolkata",
     siteName: "TimeWatch",
     type: "website",
   },
@@ -457,7 +457,7 @@ export default function BiometricAttendanceHyderabad() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>mohsin@timewatchglobal.com.com</span>
+                  Email: <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">

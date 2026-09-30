@@ -36,14 +36,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Delhi NCR, face attendance machine in Delhi NCR, fingerprint attendance machine in Delhi NCR, biometric attendance Delhi, attendance mach",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-delhi-ncr`,
+    canonical: "/biometric-attendance-system-delhi-ncr",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Chennai | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Chennai including face attendance machines and fingerprint attendance machines.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-delhi-ncr`,
+    url: "/biometric-attendance-system-delhi-ncr",
     siteName: "TimeWatch",
     type: "website",
   },
@@ -426,10 +426,10 @@ export default function BiometricAttendanceDelhi() {
               <p>
                 <span className="font-semibold">Email:</span>{" "}
                 <a
-                  href="mailto:mohsin@timewatchglobal.com.com"
+                  href="mailto:mohsin@timewatchglobal.com"
                   className="text-secondary"
                 >
-                  mohsin@timewatchglobal.com.com
+                  mohsin@timewatchglobal.com
                 </a>
               </p>
             </div>
@@ -809,7 +809,7 @@ export default function BiometricAttendanceDelhi() {
                   Call: <span>+91 95999 53923</span>
                 </p>
                 <p className="md:text-xl font-semibold">
-                  Email: <span>mohsin@timewatchglobal.com.com</span>
+                  Email: <span>mohsin@timewatchglobal.com</span>
                 </p>
               </div>
               <p className="text-sm text-white/90 max-w-xs">

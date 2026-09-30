@@ -50,7 +50,15 @@ export const metadata = {
   keywords:
     "biometric attendance system, access control system, baggage scanner, DFMD, boom barrier, parking management system, turnstile gate, full height turnstile, flap barrier, swing gate, visitor management system, UHF reader, UVSS, ANPR camera, automatic bollard, spike barrier, tyre killer, road blocker, security automation, AI face recognition, fingerprint attendance machine, palm vein recognition, cloud attendance software, vehicle access control, TimeWatch",
   alternates: {
-    canonical: "https://www.timewatchglobal.com/",
+    canonical: "/",
+    // Reciprocal tags must also be added to timewatchindia.com and timewatchuae.com.
+    // Add timewatcharabia.com (e.g. "en-sa"/"ar-sa") once its role is confirmed.
+    languages: {
+      "en-in": "https://www.timewatchindia.com/",
+      "en-ae": "https://www.timewatchuae.com/",
+      en: "https://www.timewatchglobal.com/",
+      "x-default": "https://www.timewatchglobal.com/",
+    },
   },
   openGraph: {
     title:
@@ -58,7 +66,7 @@ export const metadata = {
     description:
       "Explore TimeWatch’s full range of biometric attendance, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management systems for advanced access control and security automation.",
     type: "website",
-    url: "https://www.timewatchglobal.com/",
+    url: "/",
     siteName: "TimeWatch",
     locale: "en_US",
   },
@@ -794,10 +802,10 @@ export default async function HomePage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:mohsin@timewatchglobal.com.com"
+                      href="mailto:mohsin@timewatchglobal.com"
                       className="text-gray-600"
                     >
-                      mohsin@timewatchglobal.com.com
+                      mohsin@timewatchglobal.com
                     </a>
                     
                   </div>
@@ -812,7 +820,7 @@ export default async function HomePage() {
                       Address
                     </h3>
                     <p className="text-gray-600">
-                      {"Building no. 08R-SH Saih Shuaib2, Plot no.176-0 Dubai"}
+                      {"Office 404-09, 4th Floor, Mohammad Saeed Hareb Building, 29 Al Ittihad Rd, Port Saeed, Deira, Dubai, UAE"}
                     </p>
                   </div>
                 </div>

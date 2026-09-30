@@ -24,7 +24,7 @@ export const metadata = {
   description:
     "Discover TimeWatch | a leader in Time & Attendance, Access Control, and Security Automation. Serving businesses across India and the Gulf with AI-powered solutions.",
   alternates: {
-    canonical: "https://www.timewatchindia.com/about",
+    canonical: "/about",
   },
 };
 const faqSchema = {
@@ -76,7 +76,7 @@ const faqSchema = {
       name: "Can I get a demo or consultation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can request a free demo by contacting the TimeWatch team via phone at +91 95999 53923 or emailing mohsin@timewatchglobal.com.com.",
+        text: "Absolutely! You can request a free demo by contacting the TimeWatch team via phone at +91 95999 53923 or emailing mohsin@timewatchglobal.com.",
       },
     },
   ],

@@ -37,14 +37,14 @@ export const metadata = {
   keywords:
     "biometric attendance system in Gujarat, face attendance machine in Gujarat, fingerprint attendance machine in Gujarat, attendance machine Ahmedabad, biometric Gujarat",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-gujarat`,
+    canonical: "/biometric-attendance-system-gujarat",
   },
   openGraph: {
     title:
       "Biometric Attendance System in Gujarat | Face Attendance Machine and Fingerprint Attendance Machine",
     description:
       "TimeWatch provides advanced biometric attendance systems in Gujarat including face and fingerprint attendance devices.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/biometric-attendance-system-gujarat`,
+    url: "/biometric-attendance-system-gujarat",
     siteName: "TimeWatch",
     type: "website",
   },
@@ -386,10 +386,10 @@ export default function BiometricAttendanceGujarat() {
             <p>
               <span className="font-semibold">Email:</span>{" "}
               <a
-                href="mailto:mohsin@timewatchglobal.com.com"
+                href="mailto:mohsin@timewatchglobal.com"
                 className="text-secondary"
               >
-                mohsin@timewatchglobal.com.com
+                mohsin@timewatchglobal.com
               </a>
             </p>
           </div>
@@ -714,7 +714,7 @@ export default function BiometricAttendanceGujarat() {
                 Call: <span>+91 95999 53923</span>
               </p>
               <p className="md:text-xl font-semibold">
-                Email: <span>mohsin@timewatchglobal.com.com</span>
+                Email: <span>mohsin@timewatchglobal.com</span>
               </p>
             </div>
             <p className="text-sm text-white/90 max-w-xs">
