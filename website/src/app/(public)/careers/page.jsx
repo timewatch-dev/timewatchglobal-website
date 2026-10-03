@@ -427,16 +427,16 @@ const CareerPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="mailto:careers@timewatchindia.com"
+              href="mailto:mohsin@timewatchglobal.com"
               className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300"
             >
-              careers@timewatchindia.com
+              mohsin@timewatchglobal.com
             </a>
             {/* <a
-              href="tel:+919599953923"
+              href="tel:+971523744121"
               className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300"
             >
-              +91 95999 53923
+              +971 52 374 4121
             </a> */}
           </div>
         </div>

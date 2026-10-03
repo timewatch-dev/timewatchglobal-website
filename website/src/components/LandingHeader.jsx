@@ -36,7 +36,7 @@ const LandingHeader = () => {
         {/* right side */}
         <div className="flex items-center">
           <Button asChild className={"flex text-sm md:text-lg"}>
-            <Link href={"tel:+919266955776"}>+91-92669 55776</Link>
+            <Link href={"tel:+971568355615"}>+971 56 835 5615</Link>
           </Button>
         </div>
       </div>

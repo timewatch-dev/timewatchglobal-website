@@ -106,7 +106,7 @@ const ClientsPage = () => {
             </button>
           </div>
           <div className="mt-8 text-gray-600">
-            <p className="font-medium">📞 +91 95999 53923</p>
+            <p className="font-medium">📞 +971 52 374 4121</p>
             <p>✉️ mohsin@timewatchglobal.com</p>
           </div>
         </div>

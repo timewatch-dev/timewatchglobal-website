@@ -23,7 +23,7 @@ const Globaladdresses = [
     id: 12,
     title: "India (Head Office)",
     // name:"Ms. Priyanka",
-    email:"sales@timewatcharabia.com",
+    email:"sales@timewatchglobal.com",
     contact:"+91-95999 53923",
     
     lines: [
@@ -34,7 +34,7 @@ const Globaladdresses = [
     id: 12,
     title: "Saudi Arabia",
     name:"Mr. Hibban Mansoor",
-    email:"sales@timewatcharabia.com",
+    email:"sales@timewatchglobal.com",
     contact:"+966 53 915 7364",
     
     lines: [
@@ -48,7 +48,7 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+97156 835 5615"],
+      details: ["+971 56 835 5615"],
       subtitle: "Sales & Support - 24/7",
     },
     {
