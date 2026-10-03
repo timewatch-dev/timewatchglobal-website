@@ -7,6 +7,7 @@ export const metadata = {
   title: "Blog | TimeWatch Infocom",
   description:
     "Explore expert articles from TimeWatch Infocom on biometric systems, time attendance, access control, and security technology trends.",
+  alternates: { canonical: "/blogs" },
 };
 
 const blogListPage = () => {
