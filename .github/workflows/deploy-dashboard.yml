@@ -7,6 +7,14 @@ on:
       - dashboard/**
   workflow_dispatch:
 
+# One deploy at a time. Without this, merging several PRs in a row starts several
+# deploys that build concurrently on the VPS and race on the `current` symlink and
+# the old-release cleanup. With cancel-in-progress off, a running deploy finishes,
+# and only the newest waiting run is kept.
+concurrency:
+  group: deploy-global-dashboard
+  cancel-in-progress: false
+
 jobs:
   deploy-dashboard:
     runs-on: ubuntu-latest
