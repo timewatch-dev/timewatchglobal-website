@@ -1,6 +1,3 @@
-import path from "path";
-import { scanFolder } from "@/lib/scanFolder";
-
 const baseUrl = "https://www.timewatchglobal.com";
 
 // The deploy builds without an .env, so this fallback is what runs in
@@ -57,17 +54,9 @@ export default async function sitemap() {
     priority: page === "" ? 1.0 : 0.8,
   }));
 
-  // -------- SOLUTION PAGES (Nested Folder Scan) --------
-  const solutionsDir = path.join(
-    process.cwd(),
-    "src",
-    "app",
-    "(public)",
-    "(solutions)",
-    "solutions"
-  );
-  const solutionUrls = scanFolder(solutionsDir, `${baseUrl}/solutions`);
-  // India city pages are noindex on the global site, so they are not listed here.
+  // The India city pages and the 20 pages under /solutions/<category>/ are noindex
+  // on the global site (copies of timewatchindia.com), so they are not listed here.
+  // Only the /solutions hub itself is, via staticPages above.
 
   // -------- PRODUCT URLs --------
   const categoryUrls = [];
@@ -113,7 +102,6 @@ export default async function sitemap() {
   // -------- FINAL RETURN --------
   return [
     ...staticUrls,
-    ...solutionUrls,
     ...categoryUrls,
     ...subcategoryUrls,
     ...productUrls,
