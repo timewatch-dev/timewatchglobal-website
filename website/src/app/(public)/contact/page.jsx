@@ -16,6 +16,7 @@ export const metadata = {
   title: "Contact Us | TimeWatch Infocom",
   description:
     "Get in touch with TimeWatch Infocom for product inquiries, support, or partnership opportunities. We're here to help with secure and smart tech solutions.",
+  alternates: { canonical: "/contact" },
 };
 
 const Globaladdresses = [
