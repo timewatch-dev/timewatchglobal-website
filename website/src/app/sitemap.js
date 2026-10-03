@@ -48,7 +48,6 @@ export default async function sitemap() {
     "products",
     "downloads",
     "solutions",
-    "product-catalouge",
   ];
 
   const staticUrls = staticPages.map((page) => ({

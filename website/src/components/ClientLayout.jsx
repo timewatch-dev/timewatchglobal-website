@@ -16,7 +16,6 @@ export default function ClientLayout({ children }) {
   // ✅ Example: hide Header/Footer on specific pages
   const hideLayout = [
     "/biometric-attendance-system-bio-1se-india",
-    "/product-catalouge",
     // "/access-control-security-gate-manufacturer-in-India",
     "/ai-face-t7hd",
     "/biometric-attendance-access-control-system",
@@ -32,7 +31,7 @@ export default function ClientLayout({ children }) {
     <>
       {/* Conditionally render header/footer */}
       {!hideLayout && <Header />}
-      {hideLayout && pathname !== "/product-catalouge" && <LandingHeader />}
+      {hideLayout && <LandingHeader />}
 
       <div>{children}</div>
 

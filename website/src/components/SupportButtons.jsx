@@ -61,10 +61,7 @@ const scrollToTop = () => {
   // Check if the current pathname includes any excluded path
   const shouldExclude = excludedPaths.some((path) => pathname.includes(path));
 
-  if (
-    !path.includes("/product-catalouge") &&
-    !path.includes("/biometric-attendance-system-bio-1se-india")
-  ) {
+  if (!path.includes("/biometric-attendance-system-bio-1se-india")) {
     return (
       <>
         {/* Right Side Support Buttons */}
