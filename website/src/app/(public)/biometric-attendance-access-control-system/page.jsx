@@ -573,7 +573,7 @@ const BiometricAttendancePage = () => {
               <div className="space-y-3 text-center">
                 <p className="md:text-xl font-semibold">
                   Call:&nbsp;
-                  <span>+91 95999 53923</span>
+                  <span>+971 56 835 5615</span>
                 </p>
                 <p className="md:text-xl font-semibold">
                   Email:&nbsp;

@@ -76,7 +76,7 @@ const faqSchema = {
       name: "Can I get a demo or consultation?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely! You can request a free demo by contacting the TimeWatch team via phone at +91 95999 53923 or emailing mohsin@timewatchglobal.com.",
+        text: "Absolutely! You can request a free demo by contacting the TimeWatch team via phone at +971 52 374 4121 or emailing mohsin@timewatchglobal.com.",
       },
     },
   ],

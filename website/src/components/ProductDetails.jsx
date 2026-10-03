@@ -141,7 +141,7 @@ const ProductDetails = ({ product }) => {
           {/* Enquiry Buttons */}
           <div className="flex gap-4 mt-10 flex-wrap">
             <Button asChild className="text-[15px] md:text-[17px]">
-              <Link href="tel:+91-9599953921">
+              <Link href="tel:+971568355615">
                 <Phone /> Enquire Now
               </Link>
             </Button>
