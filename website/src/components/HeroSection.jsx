@@ -207,13 +207,6 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              {/* <ContactFormDialog> */}
-                <Link href={'/product-catalouge'} className="bg-primary text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#b82c30] transition-all transform hover:scale-105 flex items-center justify-center cursor-pointer space-x-2">
-                  <span>Get Catalogue</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              {/* </ContactFormDialog> */}
-
               <Link href={'/contact'} className="border-2 border-sectext-secondary text-secondary px-8 py-4 rounded-xl font-semibold hover:bg-sectext-secondary hover:text-primary transition-all flex items-center justify-center space-x-2">
                 {/* <Play className="w-5 h-5" /> */}
                 <span>Contact Us</span>
