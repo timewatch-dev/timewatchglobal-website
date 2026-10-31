@@ -1,3 +1,5 @@
+import path from "path";
+import { scanFolder } from "@/lib/scanFolder";
 import { SITE_URL as baseUrl, fetchProductTree } from "@/lib/productTree";
 
 export default async function sitemap() {
@@ -35,6 +37,16 @@ export default async function sitemap() {
   // The India city pages and the 20 pages under /solutions/<category>/ are noindex
   // on the global site (copies of timewatchindia.com), so they are not listed here.
   // Only the /solutions hub itself is, via staticPages above.
+
+  // -------- (guides) PAGES (Nested Folder Scan) --------
+  const howItWorksDir = path.join(
+    process.cwd(),
+    "src",
+    "app",
+    "(public)",
+    "(guides)"
+  );
+  const howItWorksUrls = scanFolder(howItWorksDir, baseUrl);
 
   // -------- PRODUCT URLs --------
   const categoryUrls = [];
@@ -80,6 +92,7 @@ export default async function sitemap() {
   // -------- FINAL RETURN --------
   return [
     ...staticUrls,
+    ...howItWorksUrls,
     ...categoryUrls,
     ...subcategoryUrls,
     ...productUrls,

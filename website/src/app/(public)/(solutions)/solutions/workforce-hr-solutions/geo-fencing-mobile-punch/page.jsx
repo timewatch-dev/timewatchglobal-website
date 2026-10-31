@@ -1,7 +1,8 @@
 import Head from "next/head";
-import ServiceSidebar from "@/components/ServiceSidebar";
-import SolutionsFaq from "@/components/SolutionsFaq";
 import Image from "next/image";
+import SolutionShell from "@/components/solutions/SolutionShell";
+import { SolutionCard, SolutionMedia } from "@/components/solutions/SolutionBlocks";
+import SolutionFaq from "@/components/solutions/SolutionFaq";
 
 export const metadata = {
   title: "Geo-Fencing & Mobile Punch Attendance | Location-Verified HRMS | TimeWatch Infocom",
@@ -12,6 +13,39 @@ export const metadata = {
       "/solutions/workforce-hr-solutions/geo-fencing-mobile-punch",
   },
 };
+
+const relatedPages = [
+  {
+    href: "/solutions/workforce-hr-solutions/field-staff-tracking-solution",
+    tag: "Solution",
+    label: "Field Staff Tracking Solution",
+  },
+  {
+    href: "/solutions/workforce-hr-solutions/cloud-attendance-payroll-software",
+    tag: "Solution",
+    label: "Cloud Attendance & Payroll Software",
+  },
+  {
+    href: "/solutions/facility-membership-management/canteen-management-system",
+    tag: "Solution",
+    label: "Canteen Management System",
+  },
+  {
+    href: "/solutions/facility-membership-management/gym-management-solution",
+    tag: "Solution",
+    label: "Gym Management Solution",
+  },
+  {
+    href: "/how-does-an-attendance-machine-work",
+    tag: "Guide",
+    label: "How Does an Attendance Machine Work?",
+  },
+  {
+    href: "/products",
+    tag: "Product range",
+    label: "All Products",
+  },
+];
 
 export default function GeoFencingMobilePunch() {
   const faqs = [
@@ -90,7 +124,7 @@ export default function GeoFencingMobilePunch() {
   };
 
   return (
-    <div className="solutions-pages">
+    <>
       <Head>
         <title>
           Geo-Fencing & Mobile Punch Attendance | Location-Verified HRMS
@@ -105,48 +139,25 @@ export default function GeoFencingMobilePunch() {
         />
       </Head>
 
-      <section className="bg-gray-50 relative overflow-hidden h-[400px] md:h-[550px]">
-        <div className="absolute inset-0 left-0 top-0 w-full h-full">
-          <div className="relative z-10 w-full h-[400px] md:h-[550px]">
-            <Image
-              src="/images/solutions/geo-fencing-mobile-punch.png"
-              alt="Consulting Hero"
-              fill
-              sizes="100"
-              className="object-cover w-full h-full"
-            />
-            {/* Gradient overlay on top of image */}
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none z-10" />
-          </div>
-        </div>
-
-        <div className="relative z-20 container flex justify-center h-full flex-col xl:pr-[400px] text-white banner">
-          <h1>Geo-Fencing & Mobile Punch Attendance Solution | TimeWatch</h1>
-          <p>
-            Geo-fencing is an advanced technology that utilizes GPS to establish
-            virtual boundaries around designated areas such as offices,
-            worksites, or restricted zones. This ensures that employees can only
-            punch in for attendance when they are physically present within
-            these specified locations. If an employee attempts to mark
-            attendance outside the defined zone, they will receive a
-            notification, preventing unauthorized or false check-ins.
-          </p>
-        </div>
-      </section>
-
-      <div className="xl:flex container gap-8 mt-10">
-        <div className="flex-1">
-          <div className="relative z-10 w-full h-[300px] md:h-[450px] rounded-lg overflow-hidden">
+      <SolutionShell
+        heroSrc="/images/solutions/geo-fencing-mobile-punch.png"
+        heroAlt="Consulting Hero"
+        title="Geo-Fencing & Mobile Punch Attendance Solution | TimeWatch"
+        intro="Geo-fencing is an advanced technology that utilizes GPS to establish virtual boundaries around designated areas such as offices, worksites, or restricted zones. This ensures that employees can only punch in for attendance when they are physically present within these specified locations. If an employee attempts to mark attendance outside the defined zone, they will receive a notification, preventing unauthorized or false check-ins."
+        related={relatedPages}
+      >
+        <SolutionCard>
+          <SolutionMedia className="h-[260px] md:h-[420px]">
             <Image
               src="/images/solutions/sub/for-geo-fencing.jpg"
               alt="Consulting Hero"
               fill
               sizes="100"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
-          </div>
+          </SolutionMedia>
 
-          <h2 className="!mt-2">What is Geo-Fencing?</h2>
+          <h2>What is Geo-Fencing?</h2>
           <p>
             Geo-fencing is an advanced technology that utilizes GPS to establish
             virtual boundaries around designated areas such as offices,
@@ -242,7 +253,9 @@ export default function GeoFencingMobilePunch() {
               (configurable on demand).
             </li>
           </ol>
+        </SolutionCard>
 
+        <SolutionCard>
           <h2>Why Companies Use Geo-Fencing & Mobile Punch</h2>
           <ul>
             <li>
@@ -262,12 +275,14 @@ export default function GeoFencingMobilePunch() {
               areas, with instant alerts for zone violations.
             </li>
           </ul>
+        </SolutionCard>
 
-          <h2 className="!mt-10">
+        <SolutionCard>
+          <h2>
             TimeWatch’s geofencing mobile punch solution dramatically improves
             attendance accuracy
           </h2>
-          <ul className="!space-y-4 mt-3">
+          <ul>
             <li>
               <strong>Location-Verified Attendance:</strong> Employees can only
               punch in or out from within defined geo-fenced boundaries,
@@ -308,12 +323,14 @@ export default function GeoFencingMobilePunch() {
               payroll.
             </strong>
           </p>
+        </SolutionCard>
 
+        <SolutionCard>
           <h2>
             Customizing geofence boundaries has a strong positive impact on both
             employee accountability and punctuality:
           </h2>
-          <ul className="!space-y-4">
+          <ul>
             <li>
               <strong>Accountability Boost:</strong> When geofence zones are
               tailored to specific work sites, offices, or project areas,
@@ -355,12 +372,14 @@ export default function GeoFencingMobilePunch() {
               empowers managers with oversight for improvement.
             </li>
           </ul>
+        </SolutionCard>
 
+        <SolutionCard>
           <h2>
             Geofencing technology has several long-term effects on workforce
             engagement and efficiency:
           </h2>
-          <ul className="!space-y-4 !mt-2">
+          <ul>
             <li>
               <strong>Enhanced Engagement:</strong> Knowing their attendance and
               work presence are tracked transparently via geofencing can
@@ -389,7 +408,7 @@ export default function GeoFencingMobilePunch() {
               and work patterns, companies can fine-tune scheduling, routing,
               and resource allocation. This means fewer wasted hours, better
               project planning, and more focused daily routines for
-              teams—results reinforced as actual data accumulates over months
+              teams-results reinforced as actual data accumulates over months
               and years.{" "}
             </li>
             <li>
@@ -418,15 +437,10 @@ export default function GeoFencingMobilePunch() {
             morale, more precise scheduling, and steady gains in productivity
             and business results.
           </p>
+        </SolutionCard>
 
-          <SolutionsFaq faqs={faqs} />
-        </div>
-
-        {/* sidebar */}
-        <div className="xl:w-[300px] sticky top-20">
-          <ServiceSidebar />
-        </div>
-      </div>
-    </div>
+        <SolutionFaq faqs={faqs} />
+      </SolutionShell>
+    </>
   );
 }

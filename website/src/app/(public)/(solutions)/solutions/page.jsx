@@ -1,9 +1,6 @@
 import { solutions } from "@/data/menuItems";
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Eye, ChevronRightCircleIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import seoFriendlySlug from "@/lib/seoFriendlySlug";
@@ -22,83 +19,66 @@ const page = () => {
         categoryUrl: cat.categoryUrl,
         subCategory: subCat.subCategory,
         subCategoryUrl: subCat.subCategoryUrl,
-        subCategoryImage: subCat.subCategoryImage
+        subCategoryImage: subCat.subCategoryImage,
       };
     })
   );
-  // console.log(sol)
 
   return (
-    <>
-      <div className="text-center mb-12 mt-12">
-        <div className="flex items-center justify-center space-x-2 mb-2">
-          <span className="h-0.5 w-5 bg-primary"></span>
-          <span className="text-primary font-semibold">Discover Our</span>
-          <span className="h-0.5 w-5 bg-primary"></span>
+    <div>
+      {/* Intro band */}
+      <header className="bg-gray-950 py-14 text-white md:py-20">
+        <div className="container max-w-7xl">
+          <div className="mb-4 flex items-center space-x-2">
+            <span className="h-0.5 w-5 bg-[#d63438]"></span>
+            <span className="font-semibold text-[#ff6b6f]">Discover Our</span>
+          </div>
+          <h1 className="mb-5 max-w-3xl text-3xl font-bold md:text-5xl">Best Solutions</h1>
         </div>
-        <h1 className="text-3xl md:text-4xl font-extrabold text-secondary mb-2">
-          Best Solutions
-        </h1>
-        {/* <p className="text-gray-500 max-w-2xl mx-auto">
-          Dcidunt eget semper nec quam. Sed hendrerit. acfelis Nunc egestas
-          augue atpellentesque laoreet
-        </p> */}
-      </div>
+      </header>
 
-      <div className="container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-10 lg:mb-20">
-        {sols.map((sol, index) => {
-          return (
-            <Card
-              className="group relative w-full max-w-sm overflow-hidden rounded-sm border-0 shadow-sm. transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 flex flex-col gap-4 pt-0 mb-4"
-              key={index}
-            >
-              {/* Product Image */}
-              <div className="relative h-56 overflow-hidden bg-gray-100">
-                {/* {console.log("Image URL:",  image)} */}
-                {sol?.subCategoryImage !== undefined ? (
-                <Image
-                  src={sol?.subCategoryImage}
-                  alt={sol?.subCategory}
-                  fill
-                  sizes="400"
-                  className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-                />
-              ) : (
-                <Image
-                  src={`/images/placeholder.jpeg`}
-                  alt={sol?.subCategoryImage || 'image title'}
-                  fill
-                  sizes="400"
-                  className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105 py-0"
-                />
-              )}
-              </div>
-
-              <CardContent className="pt-0">
-                {/* Product Info */}
-                <div className="mb-3">
-                  <h3 className="line-clamp-1 text-lg font-semibold tracking-tight">
+      {/* Solution cards */}
+      <div className="bg-gray-100 py-12 md:py-16">
+        <div className="container grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {sols.map((sol, index) => {
+            const hasImage = sol?.subCategoryImage !== undefined;
+            const alt = hasImage ? sol?.subCategory : sol?.subCategoryImage || "image title";
+            return (
+              <div
+                key={index}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="relative h-56 overflow-hidden bg-gray-100">
+                  <Image
+                    src={hasImage ? sol.subCategoryImage : "/images/placeholder.jpeg"}
+                    alt={alt}
+                    fill
+                    sizes="400"
+                    className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${
+                      hasImage ? "object-cover" : "object-contain"
+                    }`}
+                  />
+                </div>
+                <div className="flex flex-1 flex-col gap-4 p-5">
+                  <h3 className="text-lg font-semibold leading-snug text-gray-900">
                     {sol?.subCategory}
                   </h3>
-                </div>
-
-                {/* Add to Cart Button */}
-                <Button className="w-full gap-2" size="sm" asChild>
                   <Link
-                    href={`/solutions/${seoFriendlySlug(
-                      sol.categoryUrl
-                    )}/${seoFriendlySlug(sol.subCategoryUrl)}`}
+                    href={`/solutions/${seoFriendlySlug(sol.categoryUrl)}/${seoFriendlySlug(
+                      sol.subCategoryUrl
+                    )}`}
+                    className="mt-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[#d63438] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#b82d31]"
                   >
                     Read More
-                    <ChevronRightCircleIcon />
+                    <ArrowRight className="h-4 w-4" />
                   </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          );
-        })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

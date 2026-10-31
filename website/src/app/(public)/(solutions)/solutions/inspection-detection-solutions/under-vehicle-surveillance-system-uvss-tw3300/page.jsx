@@ -1,6 +1,7 @@
 import Image from "next/image";
-import ServiceSidebar from "@/components/ServiceSidebar";
-import SolutionsFaq from "@/components/SolutionsFaq";
+import SolutionShell from "@/components/solutions/SolutionShell";
+import { SolutionCard, SolutionMedia } from "@/components/solutions/SolutionBlocks";
+import SolutionFaq from "@/components/solutions/SolutionFaq";
 import Head from "next/head";
 
 export const metadata = {
@@ -12,6 +13,39 @@ export const metadata = {
       "/solutions/inspection-detection-solutions/under-vehicle-surveillance-system-uvss-tw3300",
   },
 };
+
+const relatedPages = [
+  {
+    href: "/solutions/inspection-detection-solutions/timescan-cargo-vehicle-inspection-system",
+    tag: "Solution",
+    label: "TimeScan Cargo and Vehicle Inspection System",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
+    tag: "Solution",
+    label: "Advanced X-Ray Baggage Screening",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/explosive-narcotics-detector",
+    tag: "Solution",
+    label: "Explosive & Narcotics Trace Detector",
+  },
+  {
+    href: "/how-does-a-boom-barrier-work",
+    tag: "Guide",
+    label: "How Does a Boom Barrier Work?",
+  },
+  {
+    href: "/how-does-a-body-scanner-work",
+    tag: "Guide",
+    label: "How Does a Body Scanner Work?",
+  },
+  {
+    href: "/products",
+    tag: "Product range",
+    label: "All Products",
+  },
+];
 
 export default function WalkThroughMetalDetectorTWND800() {
   const faqs = [
@@ -92,7 +126,7 @@ export default function WalkThroughMetalDetectorTWND800() {
   };
 
   return (
-    <div className="solutions-pages">
+    <>
       {/* Meta Info & Schema FAQ */}
       <Head>
         <script
@@ -100,182 +134,155 @@ export default function WalkThroughMetalDetectorTWND800() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
         />
       </Head>
-      <div className="">
-        {/* Hero Section */}
 
-        <section className="bg-gray-50 relative overflow-hidden h-[400px] md:h-[550px]">
-          <div className="absolute inset-0 left-0 top-0 w-full h-full">
-            <div className="relative z-10 w-full h-[400px] md:h-[550px]">
-              <Image
-                src="/images/solutions/UVSS.png"
-                alt="timescan-cargo-vehicle-inspection-system"
-                fill
-                sizes="100"
-                className="object-cover w-full h-full"
-              />
-              {/* Gradient overlay on top of image */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none z-10" />
-            </div>
-          </div>
+      <SolutionShell
+        heroSrc="/images/solutions/UVSS.png"
+        heroAlt="timescan-cargo-vehicle-inspection-system"
+        title="Under Vehicle Surveillance System - TW3300"
+        intro="The TimeWatch TW3300 Under Vehicle Surveillance System (UVSS) is designed for high-security premises that require reliable and rapid under-vehicle inspection. Unlike traditional handheld mirrors, TW3300 delivers high-resolution color images of a vehicle’s underside in real time, ensuring faster, more accurate detection of hidden threats, contraband, or illegal modifications."
+        related={relatedPages}
+      >
+        <SolutionCard>
+          <SolutionMedia className="h-[260px] md:h-[420px]">
+            <Image
+              src="/images/solutions/sub/uvss.jpg"
+              alt="Walk-Through-Metal-Detector-TWND"
+              title="Walk-Through-Metal-Detector-TWND"
+              fill
+              sizes="100"
+              className="object-cover"
+            />
+          </SolutionMedia>
 
-          <div className="relative z-20 container flex justify-center h-full flex-col xl:pr-[400px] text-white banner">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Under Vehicle Surveillance System – TW3300
-            </h1>
-            <p className="text-xl text-white mb-8 hidden md:block">
-              The TimeWatch TW3300 Under Vehicle Surveillance System (UVSS) is
-              designed for high-security premises that require reliable and
-              rapid under-vehicle inspection. Unlike traditional handheld
-              mirrors, TW3300 delivers high-resolution color images of a
-              vehicle’s underside in real time, ensuring faster, more accurate
-              detection of hidden threats, contraband, or illegal modifications.
-            </p>
-          </div>
-        </section>
+          <h2>
+            Under Vehicle Surveillance System (UVSS) - TW3300
+          </h2>
 
-        <div className="xl:flex container gap-8 mt-10">
-          {/* main content */}
-          <div className="flex-1">
-            <section className="">
-              <div className="relative z-10 w-full h-[300px] md:h-[450px] rounded-lg overflow-hidden">
-                <Image
-                  src="/images/solutions/sub/uvss.jpg"
-                  alt="Walk-Through-Metal-Detector-TWND"
-                  title="Walk-Through-Metal-Detector-TWND"
-                  fill
-                  sizes="100"
-                  className="object-cover w-full h-full"
-                />
-              </div>
+          <p>
+            This makes TW3300 a preferred solution for government buildings,
+            metro and railway stations, airports, border checkpoints,
+            customs, large event venues, and corporate facilities across
+            India, UAE, and other global markets.
+          </p>
+        </SolutionCard>
 
-              <h2 className="!mt-2">
-                Under Vehicle Surveillance System (UVSS) – TW3300
-              </h2>
+        <SolutionCard>
+          <h2>Key Features of TW3300 UVSS</h2>
+          <ul>
+            <li>
+              <strong>High-Resolution Imaging</strong> - Uses advanced CCD
+              scanning technology to deliver clear images of the vehicle
+              underside, ensuring nothing is missed.
+            </li>
+            <li>
+              <strong>Real-Time Monitoring</strong> - Automatically scans
+              and displays undercarriage images as vehicles pass at speeds
+              of up to 65 km/h.
+            </li>
+            <li>
+              <strong>Weatherproof Design (IP68)</strong> - Rugged,
+              waterproof, and dustproof, ideal for outdoor installations in
+              extreme Indian climates.
+            </li>
+            <li>
+              <strong>Advanced Lighting</strong> - Equipped with LED
+              lighting to ensure accurate imaging, even in low-light or
+              foggy environments.
+            </li>
+            <li>
+              <strong>Image Storage & Retrieval</strong> - Save up to
+              10,000+ images with automatic deletion of old data; retrieve
+              records by date, time, or license plate number.
+            </li>
+            <li>
+              <strong>ALPR Integration (Optional)</strong> - Automated
+              License Plate Recognition for seamless vehicle identity
+              verification.
+            </li>
+            <li>
+              <strong>Scalable & Flexible</strong> - Can be deployed at
+              parking lots, checkpoints, or integrated with access control
+              systems for multi-layered security.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <p className="mb-4">
-                This makes TW3300 a preferred solution for government buildings,
-                metro and railway stations, airports, border checkpoints,
-                customs, large event venues, and corporate facilities across
-                India, UAE, and other global markets.
-              </p>
+        <SolutionCard>
+          <h3>How TW3300 UVSS Works</h3>
+          <ul>
+            <li>
+              <strong>Vehicle Enters Checkpoint</strong> - As the vehicle
+              passes over the scanning unit, high-resolution cameras capture
+              continuous images.
+            </li>
+            <li>
+              <strong>Image Processing</strong> - The system instantly
+              processes and displays the underside of the vehicle on the
+              operator’s monitor.
+            </li>
+            <li>
+              <strong>License Plate Recognition</strong> - With ALPR
+              integration, vehicle details are automatically recorded and
+              matched with access permissions.
+            </li>
+            <li>
+              <strong>Operator Review</strong> - Security personnel can
+              zoom, adjust contrast, or enhance images for a closer
+              inspection.
+            </li>
+            <li>
+              <strong>Data Storage</strong> - Images and vehicle logs are
+              saved for compliance, audits, and investigations.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h2>Key Features of TW3300 UVSS</h2>
-              <ul>
-                <li>
-                  <strong>High-Resolution Imaging</strong> – Uses advanced CCD
-                  scanning technology to deliver clear images of the vehicle
-                  underside, ensuring nothing is missed.
-                </li>
-                <li>
-                  <strong>Real-Time Monitoring</strong> – Automatically scans
-                  and displays undercarriage images as vehicles pass at speeds
-                  of up to 65 km/h.
-                </li>
-                <li>
-                  <strong>Weatherproof Design (IP68)</strong> – Rugged,
-                  waterproof, and dustproof, ideal for outdoor installations in
-                  extreme Indian climates.
-                </li>
-                <li>
-                  <strong>Advanced Lighting</strong> – Equipped with LED
-                  lighting to ensure accurate imaging, even in low-light or
-                  foggy environments.
-                </li>
-                <li>
-                  <strong>Image Storage & Retrieval</strong> – Save up to
-                  10,000+ images with automatic deletion of old data; retrieve
-                  records by date, time, or license plate number.
-                </li>
-                <li>
-                  <strong>ALPR Integration (Optional)</strong> – Automated
-                  License Plate Recognition for seamless vehicle identity
-                  verification.
-                </li>
-                <li>
-                  <strong>Scalable & Flexible</strong> – Can be deployed at
-                  parking lots, checkpoints, or integrated with access control
-                  systems for multi-layered security.
-                </li>
-              </ul>
+        <SolutionCard>
+          <h2>Applications of TW3300</h2>
+          <ul>
+            <li>
+              <strong>Government Buildings</strong> - Prevent unauthorized
+              entry of vehicles carrying hidden contraband or explosives.
+            </li>
+            <li>
+              <strong>Metro & Railway Stations</strong> - Enhance passenger
+              safety with rapid under-vehicle inspections during peak hours.
+            </li>
+            <li>
+              <strong>Airports</strong> - Ensure secure and efficient
+              vehicle movement at restricted areas and parking zones.
+            </li>
+            <li>
+              <strong>Stadiums & Event Venues</strong> - Manage high traffic
+              securely during cricket, football, or large cultural events.
+            </li>
+            <li>
+              <strong>Corporate Campuses & IT Parks</strong> - Protect
+              infrastructure and personnel with automated vehicle checks.
+            </li>
+            <li>
+              <strong>Customs & Border Control</strong> - Detect illegal
+              trafficking or hidden compartments at checkpoints.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h3>How TW3300 UVSS Works</h3>
-              <ul>
-                <li>
-                  <strong>Vehicle Enters Checkpoint</strong> – As the vehicle
-                  passes over the scanning unit, high-resolution cameras capture
-                  continuous images.
-                </li>
-                <li>
-                  <strong>Image Processing</strong> – The system instantly
-                  processes and displays the underside of the vehicle on the
-                  operator’s monitor.
-                </li>
-                <li>
-                  <strong>License Plate Recognition</strong> – With ALPR
-                  integration, vehicle details are automatically recorded and
-                  matched with access permissions.
-                </li>
-                <li>
-                  <strong>Operator Review</strong> – Security personnel can
-                  zoom, adjust contrast, or enhance images for a closer
-                  inspection.
-                </li>
-                <li>
-                  <strong>Data Storage</strong> – Images and vehicle logs are
-                  saved for compliance, audits, and investigations.
-                </li>
-              </ul>
+        <SolutionCard>
+          <h2>Benefits of Choosing TW3300</h2>
 
-              <h2>Applications of TW3300</h2>
-              <ul>
-                <li>
-                  <strong>Government Buildings</strong> – Prevent unauthorized
-                  entry of vehicles carrying hidden contraband or explosives.
-                </li>
-                <li>
-                  <strong>Metro & Railway Stations</strong> – Enhance passenger
-                  safety with rapid under-vehicle inspections during peak hours.
-                </li>
-                <li>
-                  <strong>Airports</strong> – Ensure secure and efficient
-                  vehicle movement at restricted areas and parking zones.
-                </li>
-                <li>
-                  <strong>Stadiums & Event Venues</strong> – Manage high traffic
-                  securely during cricket, football, or large cultural events.
-                </li>
-                <li>
-                  <strong>Corporate Campuses & IT Parks</strong> – Protect
-                  infrastructure and personnel with automated vehicle checks.
-                </li>
-                <li>
-                  <strong>Customs & Border Control</strong> – Detect illegal
-                  trafficking or hidden compartments at checkpoints.
-                </li>
-              </ul>
+          <ul>
+            <li>Faster and more accurate than manual inspection methods</li>
+            <li>Reduces manpower requirements and operational delays</li>
+            <li>Prevents smuggling, terrorism, and unauthorized entry</li>
+            <li>Provides long-term digital evidence for security audits</li>
+            <li>
+              Easy to install, relocate, and integrate with other systems
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h2>Benefits of Choosing TW3300</h2>
-
-              <ul>
-                <li>Faster and more accurate than manual inspection methods</li>
-                <li>Reduces manpower requirements and operational delays</li>
-                <li>Prevents smuggling, terrorism, and unauthorized entry</li>
-                <li>Provides long-term digital evidence for security audits</li>
-                <li>
-                  Easy to install, relocate, and integrate with other systems
-                </li>
-              </ul>
-            </section>
-
-            {/* FAQ Section */}
-            <SolutionsFaq faqs={faqs} />
-          </div>
-          {/* sidebar */}
-          <div className="xl:w-[300px] sticky top-20">
-            <ServiceSidebar />
-          </div>
-        </div>
-      </div>
-    </div>
+        <SolutionFaq faqs={faqs} />
+      </SolutionShell>
+    </>
   );
 }

@@ -62,7 +62,7 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "TimeWatch – Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions",
+      "TimeWatch - Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions",
     description:
       "Explore TimeWatch’s full range of biometric attendance, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management systems for advanced access control and security automation.",
     type: "website",
@@ -344,7 +344,7 @@ export default async function HomePage() {
                   <div className="md:w-2/5 relative overflow-hidden h-[180px] lg:h-[140px] xl:h-[180px]">
                     <Image
                       src="/images/solutions/entrance-system-home.jpg"
-                      alt="Crowd Management Solutions in India – Turnstile Gates"
+                      alt="Crowd Management Solutions in India - Turnstile Gates"
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -352,7 +352,7 @@ export default async function HomePage() {
 
                   <div className="md:w-3/5 p-3 md:p-6 flex flex-col justify-between">
                     <h3 className="text-xl md:text-2xl lg:text-lg xl:text-2xl font-bold text-[#6d6f72] mb-3 line-clamp-3 group-hover:text-[#d63438] transition-colors">
-                      Crowd Management Solutions in India – Turnstile Gates
+                      Crowd Management Solutions in India - Turnstile Gates
                     </h3>
                     <span className="text-[#d63438] font-medium text-sm md:text-xl lg:text-sm xl:text-lg max-w-[200px]">
                       Security Solutions
@@ -577,7 +577,7 @@ export default async function HomePage() {
         <div className="container  mt-6 lg:mt-20">
           <div className="grid lg:grid-cols-2">
             <div>
-              <h2 className="h2 block lg:hidden text-secondary">Unlock the Best in Security <span className="text-primary.">– Get Our Catalogue Now</span></h2>
+              <h2 className="h2 block lg:hidden text-secondary">Unlock the Best in Security <span className="text-primary.">- Get Our Catalogue Now</span></h2>
               <div className="w-full lg:w-[600px] h-[200px] lg:h-[400px] relative mx-auto">
                 <Image
                   src="/images/catalogue.webp"
@@ -590,7 +590,7 @@ export default async function HomePage() {
             </div>
             <div>
               <div className="flex flex-col items-center">
-                <h2 className="h2 hidden lg:block text-secondary">Unlock the Best in Security <span className="text-primary.">– Get Our Catalogue Now</span></h2>
+                <h2 className="h2 hidden lg:block text-secondary">Unlock the Best in Security <span className="text-primary.">- Get Our Catalogue Now</span></h2>
                 <Counter />
                 <Button className={'mt-5'}>Get the Catalogue</Button>
               </div>
@@ -605,7 +605,7 @@ export default async function HomePage() {
             <div>
               <div className="text-center">
                 <h2 className="font-bold text-[25px] text-center mb-5 text-gray-900">
-                  Unlock the Best in Security – Get Our Catalogue Now
+                  Unlock the Best in Security - Get Our Catalogue Now
                 </h2>
                 <div className="w-full lg:w-[600px] h-[200px] lg:h-[400px] relative mx-auto">
                   <Image
@@ -649,7 +649,7 @@ export default async function HomePage() {
                   position: "",
                   company: "",
                   content:
-                    "I had an excellent experience with the technical support provided by Lalit Kumar. He was extremely knowledgeable, patient, and efficient in resolving my issue. His prompt response and clear communication made the entire process smooth and hassle-free. I truly appreciate his dedication and professionalism. Great support – thank you, Lalit!",
+                    "I had an excellent experience with the technical support provided by Lalit Kumar. He was extremely knowledgeable, patient, and efficient in resolving my issue. His prompt response and clear communication made the entire process smooth and hassle-free. I truly appreciate his dedication and professionalism. Great support - thank you, Lalit!",
                   rating: 5,
                 },
                 {
@@ -657,7 +657,7 @@ export default async function HomePage() {
                   position: "",
                   company: "",
                   content:
-                    "I've been using TimeWatch Bio-Manager (eVe software) and it's been consistently user-friendly and reliable. The support team is quick, professional, and always helpful. Special thanks to Dhiraj Tiwari for their excellent assistance – knowledgeable, patient, and efficient. Highly recommend TimeWatch for its great service and cooperative team!",
+                    "I've been using TimeWatch Bio-Manager (eVe software) and it's been consistently user-friendly and reliable. The support team is quick, professional, and always helpful. Special thanks to Dhiraj Tiwari for their excellent assistance - knowledgeable, patient, and efficient. Highly recommend TimeWatch for its great service and cooperative team!",
                   rating: 5,
                 },
                 {
@@ -754,7 +754,7 @@ export default async function HomePage() {
                   <br /> with Smart Technology
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Connect with our security experts today — claim your free
+                  Connect with our security experts today - claim your free
                   on-site consultation and see how we can protect your property!
                 </p>
                 <div className="flex items-start space-x-4">

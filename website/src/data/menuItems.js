@@ -355,7 +355,7 @@ export const solutions = [
       
       },
       {
-        subCategory: "Under Vehicle Surveillance System (UVSS) – TW3300",
+        subCategory: "Under Vehicle Surveillance System (UVSS) - TW3300",
         subCategoryUrl: "under-vehicle-surveillance-system-uvss-tw3300",
           subCategoryImage: "/images/solutions/sub/uvss.jpg"
          

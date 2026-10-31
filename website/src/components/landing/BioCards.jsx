@@ -7,7 +7,7 @@ export default function BioCards() {
   // Absolute path to folder
   const folderPath = path.join(
     process.cwd(),
-    "src/app/(public)/(biometrics-controll-system)"
+    "src/app/(public)/(city-pages)"
   );
 
   // Read only directories

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import ServiceSidebar from "@/components/ServiceSidebar";
-import SolutionsFaq from "@/components/SolutionsFaq";
+import SolutionShell from "@/components/solutions/SolutionShell";
+import { SolutionCard, SolutionMedia } from "@/components/solutions/SolutionBlocks";
+import SolutionFaq from "@/components/solutions/SolutionFaq";
 import Head from "next/head";
 
 export const metadata = {
@@ -12,6 +13,39 @@ export const metadata = {
       "/solutions/inspection-detection-solutions/timescan-cargo-vehicle-inspection-system",
   },
 };
+
+const relatedPages = [
+  {
+    href: "/solutions/inspection-detection-solutions/under-vehicle-surveillance-system-uvss-tw3300",
+    tag: "Solution",
+    label: "Under Vehicle Surveillance System TW3300",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
+    tag: "Solution",
+    label: "Advanced X-Ray Baggage Screening",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/explosive-narcotics-detector",
+    tag: "Solution",
+    label: "Explosive & Narcotics Trace Detector",
+  },
+  {
+    href: "/how-does-a-body-scanner-work",
+    tag: "Guide",
+    label: "How Does a Body Scanner Work?",
+  },
+  {
+    href: "/how-does-a-boom-barrier-work",
+    tag: "Guide",
+    label: "How Does a Boom Barrier Work?",
+  },
+  {
+    href: "/products",
+    tag: "Product range",
+    label: "All Products",
+  },
+];
 
 export default function WalkThroughMetalDetectorTWND800() {
   const faqs = [
@@ -91,7 +125,7 @@ export default function WalkThroughMetalDetectorTWND800() {
   };
 
   return (
-    <div className="solutions-pages">
+    <>
       {/* Meta Info & Schema FAQ */}
       <Head>
         <script
@@ -99,193 +133,167 @@ export default function WalkThroughMetalDetectorTWND800() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
         />
       </Head>
-      <div className="">
-        {/* Hero Section */}
 
-        <section className="bg-gray-50 relative overflow-hidden h-[400px] md:h-[550px]">
-          <div className="absolute inset-0 left-0 top-0 w-full h-full">
-            <div className="relative z-10 w-full h-[400px] md:h-[550px]">
-              <Image
-                src="/images/solutions/timescan-cargo-vehicle-inspection-system.png"
-                alt="timescan-cargo-vehicle-inspection-system"
-                fill
-                sizes="100"
-                className="object-cover w-full h-full"
-              />
-              {/* Gradient overlay on top of image */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none z-10" />
-            </div>
-          </div>
+      <SolutionShell
+        heroSrc="/images/solutions/timescan-cargo-vehicle-inspection-system.png"
+        heroAlt="timescan-cargo-vehicle-inspection-system"
+        title="TimeScan Cargo & Vehicle Inspection System"
+        intro="The TimeScan Cargo & Vehicle Inspection System is designed to deliver fast, reliable, and secure screening of cars, buses, and commercial vehicles. Built with advanced X-ray imaging technology, it helps detect hidden threats such as weapons, explosives, drugs, and contraband without interrupting traffic flow."
+        related={relatedPages}
+      >
+        <SolutionCard>
+          <SolutionMedia className="h-[260px] md:h-[420px]">
+            <Image
+              src="/images/solutions/sub/cargo-canner.jpg"
+              alt="Walk-Through-Metal-Detector-TWND"
+              title="Walk-Through-Metal-Detector-TWND"
+              fill
+              sizes="100"
+              className="object-cover"
+            />
+          </SolutionMedia>
 
-          <div className="relative z-20 container flex justify-center h-full flex-col xl:pr-[400px] text-white banner">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              TimeScan Cargo & Vehicle Inspection System
-            </h1>
-            <p className="text-xl text-white mb-8 hidden md:block">
-              The TimeScan Cargo & Vehicle Inspection System is designed to
-              deliver fast, reliable, and secure screening of cars, buses, and
-              commercial vehicles. Built with advanced X-ray imaging technology,
-              it helps detect hidden threats such as weapons, explosives, drugs,
-              and contraband without interrupting traffic flow.
-            </p>
-          </div>
-        </section>
+          <h2>
+            Advanced Vehicle Security Screening for Safer Premises
+          </h2>
 
-        <div className="xl:flex container gap-8 mt-10">
-          {/* main content */}
-          <div className="flex-1">
-            <section className="">
-              <div className="relative z-10 w-full h-[300px] md:h-[450px] rounded-lg overflow-hidden">
-                <Image
-                  src="/images/solutions/sub/cargo-canner.jpg"
-                  alt="Walk-Through-Metal-Detector-TWND"
-                  title="Walk-Through-Metal-Detector-TWND"
-                  fill
-                  sizes="100"
-                  className="object-cover w-full h-full"
-                />
-              </div>
+          <p>
+            This system ensures drivers and passengers remain outside the
+            vehicle during scanning, making the process completely safe from
+            radiation exposure. With its powerful 200KV or optional 320KV
+            X-ray generator and high-resolution L-shaped detectors, TimeScan
+            provides unmatched penetration and crystal-clear imaging.
+          </p>
+          <p>
+            Whether installed at government buildings, metro and railway
+            checkpoints, airports, customs, or event venues, TimeScan
+            enhances security and prevents unauthorized items from slipping
+            through.
+          </p>
+        </SolutionCard>
 
-              <h2 className="!mt-2">
-                Advanced Vehicle Security Screening for Safer Premises
-              </h2>
+        <SolutionCard>
+          <h2>Key Features of TimeScan</h2>
+          <ul>
+            <li>
+              <strong>Mobile Scanning System</strong> - The X-ray scanner
+              moves automatically on rails, so vehicles don’t need to drive
+              through, saving time and effort.
+            </li>
+            <li>
+              <strong>Small Footprint Design</strong> - Requires minimal
+              space with no heavy construction, making installation quick
+              and cost-effective.
+            </li>
+            <li>
+              <strong>Dual-Energy Imaging</strong> - Accurately
+              differentiates between organic, inorganic, and metallic items,
+              giving operators greater visibility.
+            </li>
+            <li>
+              <strong>High Penetration Power</strong> - Detects up to 50 mm
+              steel (200KV) or 70 mm steel (320KV), ensuring even dense
+              materials can be scanned.
+            </li>
+            <li>
+              <strong>Automatic License Plate Recognition (ALPR)</strong> -
+              Seamlessly integrates with vehicle identification for
+              high-traffic facilities.
+            </li>
+            <li>
+              <strong>Powerful Imaging Functions</strong> - Zoom, reverse
+              colors, strip organic/inorganic matter, brighten/darken, and
+              local image enhancement to spot concealed threats.
+            </li>
+            <li>
+              <strong>Safe & Compliant</strong> - Meets GB15208.0-2005
+              safety standards with minimal X-ray leakage and film safety
+              guarantee.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <p className="mb-4">
-                This system ensures drivers and passengers remain outside the
-                vehicle during scanning, making the process completely safe from
-                radiation exposure. With its powerful 200KV or optional 320KV
-                X-ray generator and high-resolution L-shaped detectors, TimeScan
-                provides unmatched penetration and crystal-clear imaging.
-              </p>
-              <p>
-                Whether installed at government buildings, metro and railway
-                checkpoints, airports, customs, or event venues, TimeScan
-                enhances security and prevents unauthorized items from slipping
-                through.
-              </p>
+        <SolutionCard>
+          <h3>Applications of TimeScan</h3>
+          <ul>
+            <li>
+              <strong>Government Buildings</strong> - Prevent unauthorized
+              or dangerous goods from entering sensitive premises.
+            </li>
+            <li>
+              <strong>Airports & Metro Stations</strong> - Secure entry
+              points by scanning taxis, buses, and delivery vehicles.
+            </li>
+            <li>
+              <strong>Customs & Border Checkpoints</strong> - Detect
+              smuggling and contraband at state and international borders.
+            </li>
+            <li>
+              <strong>Military Bases</strong> - Protect high-security
+              facilities by identifying hidden weapons and explosives.
+            </li>
+            <li>
+              <strong>Event Venues & Stadiums</strong> - Manage large crowds
+              while keeping vehicles free from security risks.
+            </li>
+            <li>
+              <strong>Corporate Campuses & SEZs</strong> - Monitor logistics
+              and delivery vehicles entering workplace premises.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h2>Key Features of TimeScan</h2>
-              <ul>
-                <li>
-                  <strong>Mobile Scanning System</strong> – The X-ray scanner
-                  moves automatically on rails, so vehicles don’t need to drive
-                  through, saving time and effort.
-                </li>
-                <li>
-                  <strong>Small Footprint Design</strong> – Requires minimal
-                  space with no heavy construction, making installation quick
-                  and cost-effective.
-                </li>
-                <li>
-                  <strong>Dual-Energy Imaging</strong> – Accurately
-                  differentiates between organic, inorganic, and metallic items,
-                  giving operators greater visibility.
-                </li>
-                <li>
-                  <strong>High Penetration Power</strong> – Detects up to 50 mm
-                  steel (200KV) or 70 mm steel (320KV), ensuring even dense
-                  materials can be scanned.
-                </li>
-                <li>
-                  <strong>Automatic License Plate Recognition (ALPR)</strong> –
-                  Seamlessly integrates with vehicle identification for
-                  high-traffic facilities.
-                </li>
-                <li>
-                  <strong>Powerful Imaging Functions</strong> – Zoom, reverse
-                  colors, strip organic/inorganic matter, brighten/darken, and
-                  local image enhancement to spot concealed threats.
-                </li>
-                <li>
-                  <strong>Safe & Compliant</strong> – Meets GB15208.0-2005
-                  safety standards with minimal X-ray leakage and film safety
-                  guarantee.
-                </li>
-              </ul>
+        <SolutionCard>
+          <h2>Technical Specifications</h2>
+          <ul>
+            <li>
+              <strong>Tunnel Size:</strong> 3m (W) x 3m (H) - customizable
+            </li>
+            <li>
+              <strong>Scanning Speed:</strong> 0.2 m/s
+            </li>
+            <li>
+              <strong>Steel Penetration:</strong> 50mm (200KV), 70mm (320KV)
+            </li>
+            <li>
+              <strong>Resolution:</strong> Vertical 2mm / Horizontal 1.3mm
+            </li>
+            <li>
+              <strong>Monitor:</strong> 24-inch HD LCD with lockable console
+            </li>
+            <li>
+              <strong>Noise Level:</strong> &lt;65 dB
+            </li>
+            <li>
+              <strong>Operating Temp:</strong> 5°C-45°C
+            </li>
+            <li>
+              <strong>Power:</strong> Max 4KVA
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h3>Applications of TimeScan</h3>
-              <ul>
-                <li>
-                  <strong>Government Buildings</strong> – Prevent unauthorized
-                  or dangerous goods from entering sensitive premises.
-                </li>
-                <li>
-                  <strong>Airports & Metro Stations</strong> – Secure entry
-                  points by scanning taxis, buses, and delivery vehicles.
-                </li>
-                <li>
-                  <strong>Customs & Border Checkpoints</strong> – Detect
-                  smuggling and contraband at state and international borders.
-                </li>
-                <li>
-                  <strong>Military Bases</strong> – Protect high-security
-                  facilities by identifying hidden weapons and explosives.
-                </li>
-                <li>
-                  <strong>Event Venues & Stadiums</strong> – Manage large crowds
-                  while keeping vehicles free from security risks.
-                </li>
-                <li>
-                  <strong>Corporate Campuses & SEZs</strong> – Monitor logistics
-                  and delivery vehicles entering workplace premises.
-                </li>
-              </ul>
+        <SolutionCard>
+          <h2>Why Choose TimeWatch TimeScan?</h2>
 
-              <h2>Technical Specifications</h2>
-              <ul>
-                <li>
-                  <strong>Tunnel Size:</strong> 3m (W) x 3m (H) – customizable
-                </li>
-                <li>
-                  <strong>Scanning Speed:</strong> 0.2 m/s
-                </li>
-                <li>
-                  <strong>Steel Penetration:</strong> 50mm (200KV), 70mm (320KV)
-                </li>
-                <li>
-                  <strong>Resolution:</strong> Vertical 2mm / Horizontal 1.3mm
-                </li>
-                <li>
-                  <strong>Monitor:</strong> 24-inch HD LCD with lockable console
-                </li>
-                <li>
-                  <strong>Noise Level:</strong> &lt;65 dB
-                </li>
-                <li>
-                  <strong>Operating Temp:</strong> 5°C–45°C
-                </li>
-                <li>
-                  <strong>Power:</strong> Max 4KVA
-                </li>
-              </ul>
+          <ul>
+            <li>
+              Trusted by organizations across Delhi, Mumbai, Bangalore,
+              Chennai, Kolkata, Hyderabad, and Ahmedabad.
+            </li>
+            <li>
+              Deployed at critical sites in the UAE, Qatar, Saudi Arabia,
+              and Africa.
+            </li>
+            <li>
+              24x7 support and nationwide presence for hassle-free
+              operations.
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h2>Why Choose TimeWatch TimeScan?</h2>
-
-              <ul>
-                <li>
-                  Trusted by organizations across Delhi, Mumbai, Bangalore,
-                  Chennai, Kolkata, Hyderabad, and Ahmedabad.
-                </li>
-                <li>
-                  Deployed at critical sites in the UAE, Qatar, Saudi Arabia,
-                  and Africa.
-                </li>
-                <li>
-                  24x7 support and nationwide presence for hassle-free
-                  operations.
-                </li>
-              </ul>
-            </section>
-
-            {/* FAQ Section */}
-            <SolutionsFaq faqs={faqs} />
-          </div>
-          {/* sidebar */}
-          <div className="xl:w-[300px] sticky top-20">
-            <ServiceSidebar />
-          </div>
-        </div>
-      </div>
-    </div>
+        <SolutionFaq faqs={faqs} />
+      </SolutionShell>
+    </>
   );
 }

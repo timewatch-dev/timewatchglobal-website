@@ -5,6 +5,7 @@ import { Rajdhani } from "next/font/google";
 // setting NEXT_PUBLIC_GTM_ID would not change what ships.
 // import GTM from "@/components/GTM";
 import ClientLayout from "@/components/ClientLayout"; // ✅ New client wrapper
+import BodyFontScope from "@/components/BodyFontScope";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -67,14 +68,14 @@ export const metadata = {
     locale: "en_US",
     url: SITE_URL,
     title:
-      "TimeWatch – Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions",
+      "TimeWatch - Biometric Attendance, Baggage Scanners, DFMD, Parking & Security Automation Solutions",
     description:
       "TimeWatch delivers biometric attendance, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management systems for advanced access control and security automation worldwide.",
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "TimeWatch – Biometric Attendance & Security Automation Solutions",
+      "TimeWatch - Biometric Attendance & Security Automation Solutions",
     description:
       "Biometric attendance, baggage scanners, DFMDs, boom barriers, turnstiles, UVSS, ANPR cameras, and parking management systems for advanced access control and security automation worldwide.",
   },
@@ -91,7 +92,10 @@ export default function RootLayout({ children }) {
       </head>
       {/* <GTM /> */}
       <body className={rajdhani.className}>
-        <ClientLayout>{children}</ClientLayout>
+        {/* Open Sans body text on every page; header and footer sit outside the scope inside ClientLayout */}
+        <ClientLayout>
+          <BodyFontScope>{children}</BodyFontScope>
+        </ClientLayout>
       </body>
     </html>
   );
