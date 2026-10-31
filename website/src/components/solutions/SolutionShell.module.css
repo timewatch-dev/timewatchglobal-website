@@ -1,0 +1,146 @@
+/* Shared look for the /solutions/** pages: white cards on a light grey page, with the same
+   red-bar headings, grey list cards and link colour as the rest of the redesigned pages.
+   Body font and heading font come from BodyFontScope (the (solutions) route group layout). */
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2.25rem;
+  }
+}
+
+.card > :first-child {
+  margin-top: 0;
+}
+
+.card h2 {
+  margin: 2.5rem 0 1.25rem;
+  border-left: 4px solid #d63438;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #111827;
+}
+
+.card h2:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .card h2 {
+    font-size: 1.875rem;
+  }
+}
+
+/* a card that opens with an h3 (no h2 above it) gets the same section-title look as an h2 */
+.card > h3:first-child {
+  margin: 0 0 1.25rem;
+  border-left: 4px solid #d63438;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .card > h3:first-child {
+    font-size: 1.875rem;
+  }
+}
+
+.card h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card p {
+  max-width: 62rem;
+  margin: 0 0 1rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.card strong {
+  color: #111827;
+}
+
+.card a {
+  color: #b82d31;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card a:hover {
+  color: #d63438;
+}
+
+/* lists become a stack of grey cards with a red dot (white cards sit on grey, grey on white) */
+.card ul,
+.card ol {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.card ul:last-child,
+.card ol:last-child {
+  margin-bottom: 0;
+}
+
+.card li {
+  position: relative;
+  padding: 0.9rem 1.25rem 0.9rem 2.6rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: #f3f4f6;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.card li::before {
+  content: "";
+  position: absolute;
+  top: 1.45rem;
+  left: 1.15rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background: #d63438;
+}
+
+/* the cards span the full page width, so lists run in two columns on wide screens
+   (put data-cols="1" on a list that must stay in one column) */
+@media (min-width: 1024px) {
+  .card ul:not([data-cols="1"]),
+  .card ol:not([data-cols="1"]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* image blocks inside a card */
+.media {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

@@ -22,7 +22,7 @@ const validationSchema = Yup.object({
   message: Yup.string(),
 });
 
-const HomePageForm = ({ col, isRedirect = false, enquiryPage }) => {
+const HomePageForm = ({ col, isRedirect = false, enquiryPage, onSuccess }) => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [dial, setDial] = useState("971");
   const router = useRouter();
@@ -50,7 +50,9 @@ const HomePageForm = ({ col, isRedirect = false, enquiryPage }) => {
             phone: `+${dial} `,
           },
         });
-        if (isRedirect) {
+        if (onSuccess) {
+          onSuccess();
+        } else if (isRedirect) {
           router.push(`/thankyou-ppc`);
         } else {
           setIsSuccess(true);

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import ServiceSidebar from "@/components/ServiceSidebar";
-import SolutionsFaq from "@/components/SolutionsFaq";
+import SolutionShell from "@/components/solutions/SolutionShell";
+import { SolutionCard, SolutionMedia } from "@/components/solutions/SolutionBlocks";
+import SolutionFaq from "@/components/solutions/SolutionFaq";
 import Head from "next/head";
 
 export const metadata = {
@@ -12,6 +13,39 @@ export const metadata = {
       "/solutions/inspection-detection-solutions/advanced-x-ray-baggage-screening",
   },
 };
+
+const relatedPages = [
+  {
+    href: "/solutions/inspection-detection-solutions/hand-held-metal-detector-tw-hh100",
+    tag: "Solution",
+    label: "Hand Held Metal Detector TW-HH100",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/walk-through-metal-detector",
+    tag: "Solution",
+    label: "Walk-Through Metal Detector",
+  },
+  {
+    href: "/solutions/inspection-detection-solutions/explosive-narcotics-detector",
+    tag: "Solution",
+    label: "Explosive & Narcotics Trace Detector",
+  },
+  {
+    href: "/how-does-a-body-scanner-work",
+    tag: "Guide",
+    label: "How Does a Body Scanner Work?",
+  },
+  {
+    href: "/how-does-a-door-frame-metal-detector-work",
+    tag: "Guide",
+    label: "How Does a Door Frame Metal Detector Work?",
+  },
+  {
+    href: "/products",
+    tag: "Product range",
+    label: "All Products",
+  },
+];
 
 export default function HandHeldMetalDetectorTWHH100() {
   const faqs = [
@@ -92,7 +126,7 @@ export default function HandHeldMetalDetectorTWHH100() {
   };
 
   return (
-    <div className="solutions-pages">
+    <>
       {/* Meta Info & Schema FAQ */}
       <Head>
         <script
@@ -100,169 +134,137 @@ export default function HandHeldMetalDetectorTWHH100() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }}
         />
       </Head>
-      <div className="">
-        {/* Hero Section */}
 
-        <section className="bg-gray-50 relative overflow-hidden h-[400px] md:h-[550px]">
-          <div className="absolute inset-0 left-0 top-0 w-full h-full">
-            <div className="relative z-10 w-full h-[400px] md:h-[550px]">
-              <Image
-                src="/images/solutions/baggage-scanner2.png"
-                alt="baggage-scanner"
-                fill
-                sizes="100"
-                className="object-cover w-full h-full"
-              />
-              {/* Gradient overlay on top of image */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 pointer-events-none z-10" />
-            </div>
-          </div>
+      <SolutionShell
+        heroSrc="/images/solutions/baggage-scanner2.png"
+        heroAlt="baggage-scanner"
+        title="Advanced X-Ray Baggage Screening Systems for Airports, Metro Stations & Security Facilities"
+        intro="Ensuring safe and secure baggage screening is essential at busy hubs like airports in Delhi, railways in Mumbai, and airports in the Gulf. The TimeWatch X-Ray Baggage Scanner (TW100100) solution offers reliable, high-performance inspection for items ranging from standard luggage to palletized cargo-enhancing detection while maintaining fast throughput."
+        related={relatedPages}
+      >
+        <SolutionCard>
+          <SolutionMedia className="h-[260px] md:h-[420px]">
+            <Image
+              src="/images/solutions/sub/baggage-scanner.jpg"
+              alt="Hand Held Metal Detector - TW-HH100 | TimeWatch India"
+              title="Hand Held Metal Detector - TW-HH100 | TimeWatch India"
+              fill
+              sizes="100"
+              className="object-cover"
+            />
+          </SolutionMedia>
 
-          <div className="relative z-20 container flex justify-center h-full flex-col xl:pr-[400px] text-white banner">
-            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Advanced X-Ray Baggage Screening Systems for Airports, Metro
-              Stations & Security Facilities
-            </h1>
-            <p className="text-xl text-white mb-8 hidden md:block">
-              Ensuring safe and secure baggage screening is essential at busy
-              hubs like airports in Delhi, railways in Mumbai, and airports in
-              the Gulf. The TimeWatch X-Ray Baggage Scanner (TW100100) solution
-              offers reliable, high-performance inspection for items ranging
-              from standard luggage to palletized cargo—enhancing detection
-              while maintaining fast throughput.
-            </p>
-          </div>
-        </section>
+          <h2>Key Features & Benefits</h2>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              <strong>
+                High-Definition X-Ray Imaging with AI Overlays:
+              </strong>{" "}
+              Utilizing advanced algorithms, the system enhances images
+              using multiple filters-such as edge, density, and color
+              enhancements-for clear visibility. Dangerous items are
+              automatically flagged with AI overlay boxes that track
+              movement across the image.
+            </li>
 
-        <div className="xl:flex container gap-8 mt-10">
-          {/* main content */}
-          <div className="flex-1">
-            <section className="">
-              <div className="relative z-10 w-full h-[300px] md:h-[450px] rounded-lg overflow-hidden">
-                <Image
-                  src="/images/solutions/sub/baggage-scanner.jpg"
-                  alt="Hand Held Metal Detector – TW-HH100 | TimeWatch India"
-                  title="Hand Held Metal Detector – TW-HH100 | TimeWatch India"
-                  fill
-                  sizes="100"
-                  className="object-cover w-full h-full"
-                />
-              </div>
+            <li>
+              <strong>
+                Enhanced Threat Detection with Smart Alarm System:
+              </strong>{" "}
+              The scanner identifies hazardous items like knives, lighters,
+              liquids, and electronics, and triggers alarms via voice,
+              light, and belt stoppage. Each threat is logged and
+              categorized for later review.
+            </li>
 
-              <h2 className="!mt-2">Key Features & Benefits</h2>
-              <ul class="list-disc pl-6 space-y-2">
-                <li>
-                  <strong>
-                    High-Definition X-Ray Imaging with AI Overlays:
-                  </strong>{" "}
-                  Utilizing advanced algorithms, the system enhances images
-                  using multiple filters—such as edge, density, and color
-                  enhancements—for clear visibility. Dangerous items are
-                  automatically flagged with AI overlay boxes that track
-                  movement across the image.
-                </li>
+            <li>
+              <strong>Dual Camera Monitoring & Robust Storage:</strong>{" "}
+              Equipped with entrance and exit cameras plus optional PoE/IP
+              cameras for live surveillance and playback. Enables recording
+              patient-package insights and stores up to millions of images,
+              supported by RAID-based backup.
+            </li>
 
-                <li>
-                  <strong>
-                    Enhanced Threat Detection with Smart Alarm System:
-                  </strong>{" "}
-                  The scanner identifies hazardous items like knives, lighters,
-                  liquids, and electronics, and triggers alarms via voice,
-                  light, and belt stoppage. Each threat is logged and
-                  categorized for later review.
-                </li>
+            <li>
+              <strong>Flexible Display Modes & Image Manipulation:</strong>{" "}
+              Operates in security or surveillance modes. Supports image
+              enhancements such as inversion, pseudo-color, organic
+              stripping, and high-energy contrast-all to improve object
+              visibility and accuracy.
+            </li>
 
-                <li>
-                  <strong>Dual Camera Monitoring & Robust Storage:</strong>{" "}
-                  Equipped with entrance and exit cameras plus optional PoE/IP
-                  cameras for live surveillance and playback. Enables recording
-                  patient-package insights and stores up to millions of images,
-                  supported by RAID-based backup.
-                </li>
+            <li>
+              <strong>
+                User-Friendly Interface & Reliable Diagnostics:
+              </strong>{" "}
+              Operates on embedded Linux with intuitive GUIs and web access.
+              Includes self-diagnostics, error logs, user management, and
+              seamless remote updates.
+            </li>
 
-                <li>
-                  <strong>Flexible Display Modes & Image Manipulation:</strong>{" "}
-                  Operates in security or surveillance modes. Supports image
-                  enhancements such as inversion, pseudo-color, organic
-                  stripping, and high-energy contrast—all to improve object
-                  visibility and accuracy.
-                </li>
+            <li>
+              <strong>Comprehensive Scene Applications:</strong> Ideal for
+              high-security or high-volume environments including airports,
+              metro stations, government buildings, large event venues, and
+              logistics hubs.
+            </li>
+          </ul>
+        </SolutionCard>
 
-                <li>
-                  <strong>
-                    User-Friendly Interface & Reliable Diagnostics:
-                  </strong>{" "}
-                  Operates on embedded Linux with intuitive GUIs and web access.
-                  Includes self-diagnostics, error logs, user management, and
-                  seamless remote updates.
-                </li>
+        <SolutionCard>
+          <h2>Application Scenarios</h2>
+          <ul>
+            <li>
+              <strong>Metro & Railway Stations</strong> - In cities like
+              Delhi, Bengaluru, and Hyderabad, thousands of passengers move
+              daily. The TW-HH100 ensures smooth entry by detecting metallic
+              threats without causing delays.
+            </li>
+            <li>
+              Airports, for securing check-in counters and cargo lanes
+            </li>
+            <li>
+              Metro & Railway Stations, to ensure commuter and vendor safety
+            </li>
+            <li>
+              Stadiums & Event Venues, for instant screening during major
+              events
+            </li>
+            <li>
+              Government Facilities & Sensitive Buildings, for personnel and
+              container checks
+            </li>
+            <li>
+              Exhibition Halls & Large Public Spaces, to strengthen security
+              with minimal delay
+            </li>
+          </ul>
+        </SolutionCard>
 
-                <li>
-                  <strong>Comprehensive Scene Applications:</strong> Ideal for
-                  high-security or high-volume environments including airports,
-                  metro stations, government buildings, large event venues, and
-                  logistics hubs.
-                </li>
-              </ul>
+        <SolutionCard>
+          <h3>Benefits at a Glance</h3>
+          <ul>
+            <li>Improved Security with AI-assisted threat detection</li>
+            <li>
+              Fast Throughput, thanks to high-resolution scans and conveyor
+              automation
+            </li>
+            <li>
+              Operational Efficiency, reducing manual checks and human error
+            </li>
+            <li>
+              Comprehensive Oversight, with image logging and multi-camera
+              recording
+            </li>
+            <li>
+              Scalability, adaptable from airports to large event venues
+              across India and the Gulf
+            </li>
+          </ul>
+        </SolutionCard>
 
-              <h2>Application Scenarios</h2>
-              <ul>
-                <li>
-                  <strong>Metro & Railway Stations</strong> – In cities like
-                  Delhi, Bengaluru, and Hyderabad, thousands of passengers move
-                  daily. The TW-HH100 ensures smooth entry by detecting metallic
-                  threats without causing delays.
-                </li>
-                <li>
-                  Airports, for securing check-in counters and cargo lanes
-                </li>
-                <li>
-                  Metro & Railway Stations, to ensure commuter and vendor safety
-                </li>
-                <li>
-                  Stadiums & Event Venues, for instant screening during major
-                  events
-                </li>
-                <li>
-                  Government Facilities & Sensitive Buildings, for personnel and
-                  container checks
-                </li>
-                <li>
-                  Exhibition Halls & Large Public Spaces, to strengthen security
-                  with minimal delay
-                </li>
-              </ul>
-
-              <h3>Benefits at a Glance</h3>
-              <ul>
-                <li>Improved Security with AI-assisted threat detection</li>
-                <li>
-                  Fast Throughput, thanks to high-resolution scans and conveyor
-                  automation
-                </li>
-                <li>
-                  Operational Efficiency, reducing manual checks and human error
-                </li>
-                <li>
-                  Comprehensive Oversight, with image logging and multi-camera
-                  recording
-                </li>
-                <li>
-                  Scalability, adaptable from airports to large event venues
-                  across India and the Gulf
-                </li>
-              </ul>
-            </section>
-
-            {/* FAQ Section */}
-            <SolutionsFaq faqs={faqs} />
-          </div>
-          {/* sidebar */}
-          <div className="xl:w-[300px] sticky top-20">
-            <ServiceSidebar />
-          </div>
-        </div>
-      </div>
-    </div>
+        <SolutionFaq faqs={faqs} />
+      </SolutionShell>
+    </>
   );
 }
